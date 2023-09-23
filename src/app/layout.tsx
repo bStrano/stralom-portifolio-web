@@ -1,11 +1,11 @@
 import './globals.css'
 import type {Metadata} from 'next'
-import {Inter} from 'next/font/google'
+import {Montserrat} from 'next/font/google'
 import React from "react";
 import Header from "@/app/_components/Header";
 import Drawer from "@/app/_components/Header/Drawer";
 
-const inter = Inter({subsets: ['latin']})
+const inter = Montserrat({subsets: ['latin']})
 
 export const metadata: Metadata = {
     title: 'Create Next App',

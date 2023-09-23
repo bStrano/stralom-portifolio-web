@@ -47,6 +47,13 @@ module.exports = {
                 'blue-dark-2': '#192734',
                 'blue-dark-3': '#1f2d3d',
                 'blue-dark-4': '#273444',
+                'blue-dark-5': '#344563',
+                'blue-dark-6': '#3c4d6b',
+                'blue-dark-7': '#40536e',
+                'blue-dark-8': '#4c5c7a',
+                'blue-dark-9': '#606f87',
+                'blue-dark-10': '#6e8098',
+                'blue-dark-11': '#7e8ba5',
             },
             fontFamily: {
                 sans: ['Graphik', 'sans-serif'],
