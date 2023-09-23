@@ -1,0 +1,13 @@
+{
+  "HomeIntroduction": {
+    "welcome": "Hello! My name is",
+    "description": "I'm a full stack developer with more than five years of experience in Web and Mobile applications. "
+  },
+  "Header": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+}

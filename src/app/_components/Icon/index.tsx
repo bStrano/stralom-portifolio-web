@@ -8,7 +8,7 @@ interface IIconButtonProps extends IconProps{
 
 function Icon(props: IIconButtonProps) {
  return (
-     <div className={'px-10'}>
+     <div>
       <Iconify className={'text-white'} fontSize={30} {...props} />
      </div>
  );}

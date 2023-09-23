@@ -1,11 +1,14 @@
 import React from 'react';
 import FlashLight from "../FlashLight";
+import {useTranslations} from "next-intl";
 
 interface IHomeIntroductionProps {
 
 }
 
 function HomeIntroduction(props: IHomeIntroductionProps) {
+    const t = useTranslations('HomeIntroduction');
+
     return (
         <section className={'p-10 bg-gradient-to-r from-blue-dark to-blue-dark-4 flex  h-[calc(100vh-75px)] justify-center items-center'}>
             <FlashLight />
@@ -13,7 +16,7 @@ function HomeIntroduction(props: IHomeIntroductionProps) {
             <article>
                 <div>
                     <div>
-                        <p className={'text-xl text-blue-dark-11'}>Hello! My name is </p>
+                        <p className={'text-xl text-blue-dark-11'}>{t('welcome')}</p>
                         <h1>
                             <div>
                                 {
@@ -24,8 +27,7 @@ function HomeIntroduction(props: IHomeIntroductionProps) {
                                     ))}
                             </div>
                         </h1>
-                        <p className={'text-xl text-blue-dark-11'}>I`m a full stack developer with more than five years of experience in Web and Mobile
-                            applications.</p>
+                        <p className={'text-xl text-blue-dark-11'}>{t('description')}</p>
                     </div>
                 </div>
             </article>

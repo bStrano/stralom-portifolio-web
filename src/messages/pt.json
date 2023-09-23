@@ -1,0 +1,13 @@
+{
+  "HomeIntroduction": {
+    "welcome": "Olá! Meu nome é",
+    "description": "Eu sou um desenvolvedor fullstack com mais de 5 anos de experiencia no desenvolvimento de aplicações WEB e Mobile. "
+  },
+  "Header": {
+    "home": "Inicio",
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "contact": "Contato"
+  }
+}
