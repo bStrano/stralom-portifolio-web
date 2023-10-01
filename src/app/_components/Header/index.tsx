@@ -46,7 +46,7 @@ function Header(props: IHeaderProps) {
     }
 
     return (
-        <nav className="flex flex-row bg-black py-6 sticky top-0">
+        <nav className="flex flex-row bg-black py-6 sticky top-0 z-20">
             <span className={'flex-1 text-white pr-20 pl-10'}>Stralom</span>
             {renderThemeSwitcher()}
             {renderIntlFlags()}

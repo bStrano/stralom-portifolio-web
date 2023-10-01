@@ -59,6 +59,20 @@ module.exports = {
                 sans: ['Graphik', 'sans-serif'],
                 serif: ['Merriweather', 'serif'],
             },
+            keyframes: {
+                wiggle: {
+                    '0%, 100%': { transform: 'rotate(-3deg)' },
+                    '50%': { transform: 'rotate(3deg)' },
+                },
+                up: {
+                    '100%': { transform: 'translateY(calc(100vh))' },
+                        delay: '1s',
+                },
+            },
+            animation: {
+                wiggle: 'wiggle 1s ease-in-out infinite ',
+                up: 'up 10s ease-in infinite',
+            },
             extend: {
                 spacing: {
                     '128': '32rem',
