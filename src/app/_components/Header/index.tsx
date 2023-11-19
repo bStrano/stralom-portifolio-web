@@ -30,11 +30,11 @@ function Header(props: IHeaderProps) {
 
     const renderLargeSizeMenu = () => {
         return <div className={'flex flex-row ml-5'}>
-            <MenuItem item={'home'}/>
-            <MenuItem item={'about'}/>
-            <MenuItem item={'skills'}/>
-            <MenuItem item={'projects'}/>
-            <MenuItem item={'contact'}/>
+            <MenuItem item={'home'} path={'/'}/>
+            <MenuItem item={'about'} path={'/about'}/>
+            <MenuItem item={'skills'} path={'/skills'}/>
+            <MenuItem item={'projects'} path={'projects'}/>
+            <MenuItem item={'contact'} path={'contacts'}/>
         </div>
     }
 
