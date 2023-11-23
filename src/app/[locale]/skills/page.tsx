@@ -28,7 +28,7 @@ export default function Home() {
                         icon: 'tabler:sql'
                     },
                 ]}/>
-                <SkillSection title={'Web/Mobile Development - Frameworks'} skills={[
+                <SkillSection title={'Frontend'} skills={[
                     {
                         title: 'React',
                         icon: 'devicon:react-wordmark'
@@ -53,6 +53,14 @@ export default function Home() {
                         title: 'Prisma',
                         icon: 'logos:flutter'
                     },
+                    {
+                        title: 'Unity',
+                        icon: 'logos:unity'
+                    },
+                    {
+                        title: 'Tailwind',
+                        icon: 'devicon:tailwindcss'
+                    },
                 ]}/>
                 <SkillSection title={'Backend'} skills={[
                     {
@@ -71,8 +79,24 @@ export default function Home() {
                         title: 'Prisma',
                         icon: 'logos:nestjs'
                     },
+                    {
+                        title: 'Firebase',
+                        icon: 'logos:firebase'
+                    },
+                    {
+                        title: 'Swagger',
+                        icon: 'logos:swagger'
+                    },
+                    {
+                        title: 'Dotnet',
+                        icon: 'skill-icons:dotnet'
+                    },
+                    {
+                        title: 'Expo',
+                        icon: 'cib:expo'
+                    },
                 ]}/>
-                <SkillSection title={'Infraestrutura'} skills={[
+                <SkillSection title={'Others'} skills={[
                     {
                         title: 'Nextjs',
                         icon: 'skill-icons:aws-light'
@@ -88,6 +112,14 @@ export default function Home() {
                     {
                         title: 'React',
                         icon: 'skill-icons:git'
+                    },
+                    {
+                        title: 'React',
+                        icon: 'skill-icons:docker'
+                    },
+                    {
+                        title: 'Jest',
+                        icon: 'skill-icons:jest'
                     },
                 ]}/>
             </div>
