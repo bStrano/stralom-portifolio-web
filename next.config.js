@@ -4,8 +4,13 @@ const withNextIntl = require('next-intl/plugin')(
 );
 
 module.exports = withNextIntl({
-    experimental: {
-        serverActions: true,
-    }
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'stralom-portifolio.s3.us-east-2.amazonaws.com',
+            },
+        ],
+    },
     // Other Next.js configuration ...
 });
