@@ -9,5 +9,13 @@
     "skills": "Habilidades",
     "projects": "Projetos",
     "contact": "Contato"
+  },
+  "Skills": {
+    "sections": {
+      "languages": "Linguagens",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "others": "Outros"
+    }
   }
 }

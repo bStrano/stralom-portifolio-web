@@ -1,56 +1,59 @@
 import React from "react";
 import SkillSection from "@/app/[locale]/skills/_components/Section";
+import {useTranslations} from "next-intl";
 
 export default function Home() {
+    const t = useTranslations('Skills');
+
     return (
         <div
             className={'py-10 bg-gradient-to-r from-blue-dark to-blue-dark-4 flex flex-1 justify-center items-center gap-10 overflow-auto'}>
             <div className={'flex flex-col gap-10'}>
-                <SkillSection title={'Linguagens'} skills={[
+                <SkillSection title={t('sections.languages')} skills={[
                     {
-                        title: 'React',
+                        title: 'Typescript',
                         icon: 'skill-icons:typescript'
                     },
                     {
-                        title: 'React',
+                        title: 'Javascript',
                         icon: 'skill-icons:javascript'
                     },
                     {
-                        title: 'React',
+                        title: 'Java',
                         icon: 'skill-icons:java-dark'
                     },
                     {
-                        title: 'React',
+                        title: 'C#',
                         icon: 'logos:c-sharp'
                     },
                     {
-                        title: 'React',
+                        title: 'SQL',
                         icon: 'tabler:sql'
                     },
                 ]}/>
-                <SkillSection title={'Frontend'} skills={[
+                <SkillSection title={t('sections.frontend')} skills={[
                     {
                         title: 'React',
                         icon: 'devicon:react-wordmark'
                     },
                     {
-                        title: 'Nextjs',
+                        title: 'Next.js',
                         icon: 'cib:next-js'
                     },
                     {
-                        title: 'React',
+                        title: 'React Query',
                         icon: 'logos:react-query-icon'
                     },
                     {
-                        title: 'React',
+                        title: 'Android',
                         icon: 'devicon:android'
                     },
                     {
-                        title: 'React',
+                        title: 'MUI',
                         icon: 'logos:material-ui'
                     },
                     {
-                        title: 'Prisma',
+                        title: 'Flutter',
                         icon: 'logos:flutter'
                     },
                     {
@@ -62,13 +65,13 @@ export default function Home() {
                         icon: 'devicon:tailwindcss'
                     },
                 ]}/>
-                <SkillSection title={'Backend'} skills={[
+                <SkillSection title={t('sections.backend')} skills={[
                     {
-                        title: 'React',
+                        title: 'Nodejs',
                         icon: 'logos:nodejs'
                     },
                     {
-                        title: 'React',
+                        title: 'Typeorm',
                         icon: 'logos:typeorm'
                     },
                     {
@@ -76,7 +79,7 @@ export default function Home() {
                         icon: 'skill-icons:prisma'
                     },
                     {
-                        title: 'Prisma',
+                        title: 'Nestjs',
                         icon: 'logos:nestjs'
                     },
                     {
@@ -88,33 +91,33 @@ export default function Home() {
                         icon: 'logos:swagger'
                     },
                     {
-                        title: 'Dotnet',
+                        title: '.NET',
                         icon: 'skill-icons:dotnet'
                     },
                     {
-                        title: 'Expo',
+                        title: 'EXPO',
                         icon: 'cib:expo'
                     },
                 ]}/>
-                <SkillSection title={'Others'} skills={[
+                <SkillSection title={t('sections.others')} skills={[
                     {
-                        title: 'Nextjs',
+                        title: 'Amazon Web Services',
                         icon: 'skill-icons:aws-light'
                     },
                     {
-                        title: 'React',
+                        title: 'Oracle Database',
                         icon: 'devicon:oracle'
                     },
                     {
-                        title: 'React',
+                        title: 'Mongodb',
                         icon: 'skill-icons:mongodb'
                     },
                     {
-                        title: 'React',
+                        title: 'Git',
                         icon: 'skill-icons:git'
                     },
                     {
-                        title: 'React',
+                        title: 'Docker',
                         icon: 'skill-icons:docker'
                     },
                     {
