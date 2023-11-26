@@ -1,20 +1,27 @@
 import {ProjectCard} from "@/app/[locale]/projects/_components/Card";
 import {useProjects} from "@/app/[locale]/projects/_hooks/useProjects";
+import {ProjectInterface} from "@/app/[locale]/projects/_types/ProjectInterface";
 
-export function ProjectsSection () {
-  const {data} = useProjects();
+export function ProjectsSection() {
+    const {data} = useProjects();
 
-  return (
-      <div className={'flex flex-col justify-center items-center'}>
-        {data?.map((project, index) => (
-          <ProjectCard
-            key={index}
-            type={project.type as 'PERSONAL' | 'CORPORATE'}
-            title={project.title}
-            description={project.description}
-            image={project.image}
-          />
-        ))}
-      </div>
-  );
+    const renderProjects = (projects: ProjectInterface[]) => {
+        return projects.map((project: ProjectInterface, index: number) => {
+            return <ProjectCard key={index} {...project} />
+        })
+    }
+
+    return (
+        <div className={'flex flex-col justify-center items-center'}>
+            {
+                Object.entries(Array.from(data).map(([key, value]) => {
+                        return <div key={key}>
+                            <h1 className={'text-3xl font-bold mx-24 my-5 text-blue-dark-11'}>{key}</h1>
+                            {renderProjects(value)}
+                        </div>
+                    }
+                ))
+            }
+        </div>
+    );
 }
