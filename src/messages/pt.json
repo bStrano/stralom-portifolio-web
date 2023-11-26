@@ -17,5 +17,73 @@
       "backend": "Backend",
       "others": "Outros"
     }
+  },
+  "Projects": {
+    "types": {
+      "personal": "Personal",
+      "professional": "Professional"
+    },
+    "data": {
+      "privatePension": {
+        "title": "Private Pension",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+      },
+      "keychain": {
+        "title": "Keychain",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+      },
+      "stoneEcommerce": {
+        "title": "Stone E-commerce",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+      },
+      "cementEcommerce": {
+        "title": "Cement E-commerce",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+      },
+      "financial": {
+        "title": "Financial",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+      },
+      "timeTracker": {
+        "title": "Time Tracker",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+      },
+      "eventManager": {
+        "title": "Event Manager",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+      },
+      "seedSales": {
+        "title": "Seed Sales",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+      },
+      "seedShipping": {
+        "title": "Seed Shipping",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+      },
+      "activesMonitoring": {
+        "title": "Seed Production",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+      },
+      "medicineTracker": {
+        "title": "Medicine Tracker",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+      },
+      "seriousGames": {
+        "title": "TCC - Serius Games Aprendendo a programar",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+      },
+      "shipping": {
+        "title": "Shipping Manager",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+      },
+      "marketList": {
+        "title": "Market List",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+      }
+    }
   }
 }
