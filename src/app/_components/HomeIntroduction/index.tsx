@@ -1,7 +1,6 @@
 import React from 'react';
 import FlashLight from "../FlashLight";
 import {useTranslations} from "next-intl";
-import Shower from "../Shower";
 
 interface IHomeIntroductionProps {
 

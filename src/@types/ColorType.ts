@@ -1,0 +1,1 @@
+export type ColorType = 'cyan' | 'amber' | 'emerald' | 'teal' | 'fuchsia' | 'indigo'  | 'lime' | 'violet' | 'sky' | 'slate' | 'rose' | 'red' | 'zinc' | 'orange' | 'blue' | 'green' | 'yellow' | 'purple' | 'gray'

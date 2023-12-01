@@ -16,7 +16,7 @@ export function ProjectsSection() {
             {
                 Object.entries(Array.from(data).map(([key, value]) => {
                         return <div key={key}>
-                            <h1 className={'text-3xl font-bold mx-24 my-5 text-blue-dark-11'}>{key}</h1>
+                            {/*<h1 className={'text-3xl font-bold mx-24 my-5 text-blue-dark-11'}>{key}</h1>*/}
                             {renderProjects(value)}
                         </div>
                     }
