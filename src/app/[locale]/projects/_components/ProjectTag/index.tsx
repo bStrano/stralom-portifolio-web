@@ -13,6 +13,10 @@ interface SkillLookupInterface {
 }
 
 const skills: GenericLookupInterface<SkillsEnums, SkillLookupInterface> = {
+    [SkillsEnums.SQLITE]: {
+        title: 'SQLite',
+        color: 'sky'
+    },
     [SkillsEnums.AWS]: {
         title: 'AWS',
         color: 'orange'

@@ -30,5 +30,6 @@ export enum SkillsEnums {
     DOTNET = 'dotnet',
     REDIS = 'redis',
     ANDROID = 'android',
+    SQLITE = 'sqlite',
 }
 

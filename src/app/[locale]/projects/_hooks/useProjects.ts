@@ -23,7 +23,7 @@ export function useProjects() {
                 description: t('portfolio.description'),
                 year: 2023,
                 image: 'https://stralom-portifolio.s3.us-east-2.amazonaws.com/public/projects/portifolio.jpg',
-                skills: [SkillsEnums.TYPESCRIPT, SkillsEnums.REACT, SkillsEnums.NEXT, SkillsEnums.TAILWIND, SkillsEnums.S3, SkillsEnums.POSTGRES, SkillsEnums.EC2],
+                skills: [SkillsEnums.TYPESCRIPT, SkillsEnums.REACT, SkillsEnums.NEXT, SkillsEnums.TAILWIND, SkillsEnums.EC2, SkillsEnums.DOCKER],
             },
             {
                 type: ProjectTypeEnum.CORPORATE,
@@ -35,10 +35,10 @@ export function useProjects() {
             },
             {
                 type: ProjectTypeEnum.PERSONAL,
-                title: 'Keychain - Shareable Passwords',
+                title: t('keychain.title'),
                 year: 2023,
-                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat.',
-                image: 'https://stralom-portifolio.s3.us-east-2.amazonaws.com/public/projects/password.jpg',
+                description: t('keychain.description'),
+                image: 'https://stralom-portifolio.s3.us-east-2.amazonaws.com/public/projects/password.jpeg',
                 skills: [SkillsEnums.C_SHARP, SkillsEnums.DART, SkillsEnums.DOTNET, SkillsEnums.FLUTTER, SkillsEnums.EC2, SkillsEnums.DOCKER],
             },
             {
@@ -47,7 +47,7 @@ export function useProjects() {
                 description: t('cementEcommerce.description'),
                 year: 2021,
                 image: 'https://stralom-portifolio.s3.us-east-2.amazonaws.com/public/projects/cement.png',
-                skills: [SkillsEnums.TYPESCRIPT, SkillsEnums.JAVASCRIPT, SkillsEnums.NODE, SkillsEnums.EXPRESS, SkillsEnums.TYPEORM, SkillsEnums.REACT_NATIVE, SkillsEnums.ORACLE_DATABASE, SkillsEnums.REDIS, SkillsEnums.MONGODB, SkillsEnums.S3, SkillsEnums.GIT],
+                skills: [SkillsEnums.TYPESCRIPT, SkillsEnums.JAVASCRIPT, SkillsEnums.NODE, SkillsEnums.EXPRESS, SkillsEnums.TYPEORM, SkillsEnums.REACT, SkillsEnums.REACT_NATIVE, SkillsEnums.ORACLE_DATABASE, SkillsEnums.REDIS, SkillsEnums.MONGODB, SkillsEnums.S3, SkillsEnums.FIREBASE, SkillsEnums.GIT, SkillsEnums.EC2],
             },
             {
                 type: ProjectTypeEnum.CORPORATE,
@@ -55,14 +55,14 @@ export function useProjects() {
                 description: t('seedSales.description'),
                 year: 2022,
                 image: 'https://stralom-portifolio.s3.us-east-2.amazonaws.com/public/projects/farm.jpeg',
-                skills: [SkillsEnums.TYPESCRIPT, SkillsEnums.NODE, SkillsEnums.EXPRESS, SkillsEnums.TYPEORM, SkillsEnums.REACT_NATIVE],
+                skills: [SkillsEnums.TYPESCRIPT, SkillsEnums.NODE, SkillsEnums.EXPRESS, SkillsEnums.TYPEORM, SkillsEnums.REACT_NATIVE, SkillsEnums.ORACLE_DATABASE, SkillsEnums.GIT, SkillsEnums.EC2],
             },
             {
                 type: ProjectTypeEnum.PERSONAL,
                 title: t('timeTracker.title'),
                 description: t('timeTracker.description'),
                 year: 2022,
-                image: 'https://stralom-portifolio.s3.us-east-2.amazonaws.com/public/projects/clock.webp',
+                image: 'https://stralom-portifolio.s3.us-east-2.amazonaws.com/public/projects/time.jpeg',
                 skills: [SkillsEnums.TYPESCRIPT, SkillsEnums.DART, SkillsEnums.FLUTTER, SkillsEnums.NODE, SkillsEnums.NEST, SkillsEnums.EXPRESS, SkillsEnums.POSTGRES],
             },
             {
@@ -71,7 +71,7 @@ export function useProjects() {
                 description: t('financial.description'),
                 year: 2021,
                 image: 'https://stralom-portifolio.s3.us-east-2.amazonaws.com/public/projects/financial.webp',
-                skills: [],
+                skills: [SkillsEnums.TYPESCRIPT, SkillsEnums.REACT_NATIVE, SkillsEnums.REACT, SkillsEnums.NEXT, SkillsEnums.NODE, SkillsEnums.NEST, SkillsEnums.TYPEORM, SkillsEnums.POSTGRES, SkillsEnums.DOCKER],
             },
             {
                 type: ProjectTypeEnum.PERSONAL,
@@ -103,7 +103,7 @@ export function useProjects() {
                 description: t('marketList.description'),
                 year: 2018,
                 image: 'https://stralom-portifolio.s3.us-east-2.amazonaws.com/public/projects/shipping.webp',
-                skills: [SkillsEnums.JAVA, SkillsEnums.ANDROID, SkillsEnums.GIT],
+                skills: [SkillsEnums.JAVA, SkillsEnums.ANDROID, SkillsEnums.SQLITE, SkillsEnums.FIREBASE, SkillsEnums.GIT],
             }
         ].sort((a, b) => {
             return b.year-a.year;
