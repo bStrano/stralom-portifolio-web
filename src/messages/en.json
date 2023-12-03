@@ -26,31 +26,31 @@
     "data": {
       "privatePension": {
         "title": "Private Pension",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+        "description": "Project aimed at private pension management, being responsible for managing private pension plans, clients and investments. Separated into three large modules: Institutional Website, where the user will find advertising information about the plan and the organization; Logged Area, where the user will have access to information about their contracted plan, simulations of other plans and benefits, complete statements, membership requirements and benefit requests, updating registration data; And finally the Administrative website, responsible for managing the content displayed in the Logged Area, with a quarantine area for requirements, system logs, user management, plan management, etc."
       },
       "portfolio": {
         "title": "Portfolio",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+        "description": "I present my digital portfolio, a concise reflection of my career and skills. A simple website aimed at providing a brief summary about me and my professional experiences and technical knowledge. It's the website you are on right now! A simple website containing 4 sections: \"About\", where you will have a brief summary about me, \"Skills\", a list of most of the technologies I used most, \"Projects\", where you will have a list of all the projects I worked on, containing a brief description about them and the technologies used; \"Contact\" and finally the ways to get in touch with me!"
       },
       "keychain": {
         "title": "Keychain",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+        "description": "With the purpose of having a first contact with .NET and putting clean architecture concepts into practice, this small project was born. This project has two modules, the first is a password sharer, to prevent passwords from being shared via chats/emails, the system allows the user to generate a temporary link containing the password to be shared, after X views or after a determined date, the password is automatically deleted. The second module is a very simple module, a password vault for password management."
       },
       "stoneEcommerce": {
         "title": "Stone E-commerce",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+        "description": "E-commerce platform specialized in stones, serving the B2B and B2C sectors, accessible both via the web and mobile devices. The project is divided into two modules, with the main one being e-commerce itself. It stands out for offering a unique experience in acquiring stones, with payment options via bank slip, card and Pix, as well as resources such as informative banners, order history and registration of invoices to improve practicality and transparency. The second module comprises an administrative area, allowing the management of delivery dates, users, banners and parameter settings, providing efficient control over various aspects of the system."
       },
       "cementEcommerce": {
         "title": "Cement E-commerce",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+        "description": "E-commerce platform specialized in cement, focused exclusively on the B2B audience. The project comprises an application and a website, divided into four large modules. The first stands out as the flagship, consisting of the e-commerce itself, allowing users to make purchases for different CNPJs. In addition, it offers features such as checking product quality information, registering and managing sellers (with the ability to customize functionalities according to the seller), viewing invoices, checking pre-approved credit, among others. The second module is aimed at salespeople, providing access to training. The third module is aimed at the general public, featuring a Webview of a blog, along with exclusive features such as a map of nearby stores and advertising campaigns. Finally, the administrative module manages users, campaigns, incidents and several other settings related to e-commerce and sellers."
       },
       "financial": {
         "title": "Financial",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+        "description": "Project developed for my own use, with the aim of carrying out my financial management, with control of transactions, investments and assets, and with a series of graphical indicators for analysis. The initial idea for this project was to develop an application, which I started developing focusing on the transaction management part, but the idea ended up being interrupted. However, it was returned and finalized in a WEB version in 2023, which is currently used and I am adding improvements casually according to my needs."
       },
       "timeTracker": {
         "title": "Time Tracker",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+        "description": "With the aim of exploring Flutter, I undertook a project dedicated to timing the time allocated to professional tasks, aiming to optimize and categorize the elements developed during work. This initiative aims to improve my productivity by providing the ability to time and categorize tasks, with the addition of tags for generating graphical reports. This highlights, in a clear and efficient way, the activities of the month, facilitating the analysis of the tasks that required the most time and the projects most booked during the period."
       },
       "eventManager": {
         "title": "Event Manager",
@@ -58,11 +58,11 @@
       },
       "seedSales": {
         "title": "Seed Sales",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+        "description": "The application's main objective is to provide several indicators to improve the sales activities of seeds and related products in the company. Additionally, it offers a complete \"dictionary\" of customers, allowing sellers to record information about their interactions, access complete purchase history, sales details and relevant indicators for a more effective approach. Additionally, it integrates an activities module with Google Calendar, enabling teams to organize tasks efficiently and assign responsibilities among members. These features aim to optimize performance and collaboration in the sales process."
       },
       "seedShipping": {
         "title": "Seed Shipping",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+        "description": "A project aimed at the logistical control of the loading of pallets and big bags, this system aimed to perform the beeping of materials to carry out effective logistics management. The flow involved obtaining the loading locations, listing the loads, the lots associated with each load, performing the batch copying and, finally, completing the load. The user had a complete breakdown of the shipment, including all relevant information, along with the bleeped and remaining batches. The application was integrated with an ERP, therefore, it did not include any web part; was developed for the purpose of feeding and consuming ERP data."
       },
       "activesMonitoring": {
         "title": "Seed Production",
@@ -70,11 +70,11 @@
       },
       "medicineTracker": {
         "title": "Medicine Tracker",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+        "description": "My first professional experience involved maintaining an existing application, focused on the traceability of biological bags. The main focus was GPS tracking and temperature monitoring of medications during transport between clinics. The application uses Bluetooth technology to communicate with the tags responsible for temperature monitoring, in addition to using the cell phone's location to obtain geolocation. All this information was recorded and fed into an administrative website with a detailed dashboard about the tags."
       },
       "seriousGames": {
         "title": "TCC - Serius Games Aprendendo a programar",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+        "description": "My course completion work at college addressed the advantages of \"Serious Games\", games aimed at teaching. I developed a 2D game with phases to teach about the initial elements of programming, such as commands, conditionals, functions and loops. Each session offered several phases, starting with guided tutorials to help the player understand the concepts. The subsequent phases presented challenges, in which the user used visual commands to create executable algorithms. The game, with an RPG theme, challenged the player to collect coins, open the treasure chest and face obstacles, such as optimizing paths limited by commands and fighting monsters. This was my first foray into the world of gaming, providing an extremely pleasant experience and resulting in a remarkably interesting final product."
       },
       "shipping": {
         "title": "Shipping Manager",
@@ -82,7 +82,7 @@
       },
       "marketList": {
         "title": "Market List",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+        "description": "My first major project, excluding those developed during college, was designed to prepare me for my first job, and as an added benefit, it was created to make grocery shopping easier. It is an application designed to function as a shopping list, integrated with a stock control module, where all items added to the list automatically update the grocery stock. Initially, I used an SQLite database to store the data locally on the device; later, part of the application was migrated to the Firebase Realtime Database, aiming for cloud storage."
       }
     }
   }
