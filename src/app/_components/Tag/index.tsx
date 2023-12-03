@@ -36,6 +36,6 @@ export default function Tag({ color = 'cyan', title }: TagProps) {
 
 
     return (
-        <span className={` text-xs font-medium me-2 px-2.5 py-0.5 rounded border ${colorClasses}`}>{title}</span>
+        <span className={`whitespace-nowrap text-xs font-medium me-2 px-2.5 py-0.5 rounded border ${colorClasses}`}>{title}</span>
     )
 }
