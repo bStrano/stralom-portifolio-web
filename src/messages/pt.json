@@ -3,6 +3,27 @@
     "welcome": "Olá! Meu nome é",
     "description": "Eu sou um desenvolvedor fullstack com mais de 5 anos de experiencia no desenvolvimento de aplicações WEB e Mobile. "
   },
+  "Words": {
+    "years": "ano(s)",
+    "months": "meses",
+    "brazilian": "Brasileiro",
+    "italian": "Italiano",
+    "saoPaulo": "São Paulo",
+    "brazil": "Brasil",
+    "internship": "Estágio",
+    "junior": "Júnior",
+    "pleno": "Pleno",
+    "senior": "Sênior",
+    "intermediate": "Intermediário",
+    "advanced": "Avançado",
+    "native": "Nativo",
+    "developer": "Desenvolvedor",
+    "techLead": "Tech Lead",
+    "local": "Local",
+    "course": "Curso",
+    "computerScience": "Ciência da Computação",
+    "formation": "Formação"
+  },
   "Header": {
     "home": "Inicio",
     "about": "Sobre",
@@ -16,6 +37,40 @@
       "frontend": "Frontend",
       "backend": "Backend",
       "others": "Outros"
+    }
+  },
+  "About": {
+    "Labels": {
+      "generalInformation": "Informações Gerais",
+      "name": "Nome",
+      "birthDate": "Data de Nascimento",
+      "nationality1": "Nacionalidade",
+      "nationality2": "Nacionalidade2",
+      "residence": "Residência",
+      "country": "País",
+      "city": "Cidade",
+      "state": "Estado",
+      "contact": "Contato",
+      "email": "E-mail",
+      "phone": "Telefone",
+      "description": "Descrição",
+      "academyFormation": "Formação Acadêmica",
+      "professionalExperience": "Experiência Profissional",
+      "projects": "Projetos",
+      "conclusionYear": "Ano de Conclusão",
+      "course": "Curso",
+      "institution": "Instituição",
+      "level": "Nível",
+      "duration": "Duração",
+      "experience": "Experiência",
+      "company": "Empresa",
+      "role": "Cargo",
+      "skills": "Habilidades",
+      "linguistic": "Linguísticas",
+      "portuguese": "Português",
+      "english": "Inglês",
+      "techniques": "Técnicas",
+      "showSkills": "Clique para ver as habilidades"
     }
   },
   "Projects": {
