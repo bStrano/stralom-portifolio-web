@@ -13,7 +13,7 @@ function MenuItem(props: IMenuItemProps) {
     return (
         <>
             <a href={path}
-               className="flex items-center flex-shrink-0 text-white mr-6 italic hover:font-black hover:text-blue hover:line-clamp-1">{t(item)}</a>
+               className="flex items-center flex-shrink-0 text-white mr-6 italic hover:bg-text-gradient hover:font-bold hover:line-clamp-1">{t(item)}</a>
         </>
     );
 }

@@ -22,7 +22,6 @@ export default function RootLayout({
         <html lang="en" className={'z-20'}>
         <body className={inter.className}>
             <Header/>
-            {/*<Drawer/>*/}
             {children}
         </body>
         </html>

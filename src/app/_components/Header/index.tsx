@@ -1,7 +1,6 @@
 import React from 'react';
-import Icon from "../Icon";
-import FlagButton from "@/app/_components/Header/FlagButton";
-import MenuItem from "@/app/_components/Header/MenuItem";
+import SmallMenu from "@/app/_components/Header/Menu/Small";
+import LargeMenu from "@/app/_components/Header/Menu/Large";
 
 interface IHeaderProps {
     backgroundColor?: string
@@ -10,49 +9,22 @@ interface IHeaderProps {
 function Header(props: IHeaderProps) {
 
 
-
-    const renderThemeSwitcher = () => {
-        return (
-            <Icon icon={'line-md:light-dark-loop'} className={'text-white mr-10 hover:scale-125 hover:text-yellow cursor-pointer'} fontSize={30} {...props} />
-        )
-    }
-
-    const renderIntlFlags = () => {
-        return (
-            <div className={'flex flex-row gap-4 mr-3'}>
-                <FlagButton icon={'emojione-v1:flag-for-brazil'} fontSize={30}
-                            locale={'pt'} {...props} />
-                <FlagButton icon={'twemoji:flag-united-states'} fontSize={30}
-                            locale={'en'} {...props} />
-            </div>
-        )
-    }
-
-    const renderLargeSizeMenu = () => {
-        return <div className={'flex flex-row ml-5'}>
-            <MenuItem item={'home'} path={'/'}/>
-            <MenuItem item={'about'} path={'/about'}/>
-            <MenuItem item={'skills'} path={'/skills'}/>
-            <MenuItem item={'projects'} path={'projects'}/>
-            <MenuItem item={'contact'} path={'contacts'}/>
-        </div>
-    }
-
-
-    const renderSmallSizeMenu = () => {
-        return (
-            <Icon icon={'ic:round-menu'}/>
-        )
-    }
+    //
+    // const renderThemeSwitcher = () => {
+    //     return (
+    //         <Icon icon={'line-md:light-dark-loop'} className={'text-white mr-10 hover:scale-125 hover:text-yellow cursor-pointer'} fontSize={30} {...props} />
+    //     )
+    // }
 
     return (
-        <nav className="flex flex-row bg-black py-6 sticky top-0 z-20">
-            <span className={'flex-1 text-white pr-20 pl-10'}>Stralom</span>
-            {renderThemeSwitcher()}
-            {renderIntlFlags()}
-            {renderLargeSizeMenu()}
+        <nav className="flex flex-1 flex-row bg-black sticky top-0">
+            <div className={'sm:hidden md:block flex-1'}>
+                <LargeMenu/>
+            </div>
 
-            {/*{renderSmallSizeMenu()}*/}
+            <div className={'md:hidden sm:block'}>
+                <SmallMenu/>
+            </div>
         </nav>
     );
 }
