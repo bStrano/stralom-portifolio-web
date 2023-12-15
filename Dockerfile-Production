@@ -5,9 +5,11 @@ RUN apk add --no-cache yarn
 WORKDIR /app
 COPY package*.json ./
 COPY yarn.lock ./
-RUN yarn install --production --frozen-lockfile
+RUN yarn install --frozen-lockfile
 COPY . .
 RUN yarn build
+RUN yarn install --production --frozen-lockfile
+
 
 FROM node:20-alpine
 
