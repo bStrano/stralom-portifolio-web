@@ -22,7 +22,15 @@
     "local": "Local",
     "course": "Course",
     "computerScience": "Computer Science",
-    "formation": "Formation"
+    "formation": "Formation",
+    "close": "Fechar",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Cellphone",
+    "description": "Description",
+    "submit": "Submit",
+    "sending": "Submitting"
   },
   "About": {
     "Labels": {

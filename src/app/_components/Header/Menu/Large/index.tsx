@@ -15,7 +15,7 @@ function LargeMenu(props: ILargeMenuProps) {
              <MenuItem item={'about'} path={'/about'}/>
              <MenuItem item={'skills'} path={'/skills'}/>
              <MenuItem item={'projects'} path={'projects'}/>
-             <MenuItem item={'contact'} path={'contacts'}/>
+             <MenuItem item={'contact'} path={'contact'}/>
          </div>
      </div>
  );}

@@ -22,7 +22,15 @@
     "local": "Local",
     "course": "Curso",
     "computerScience": "Ciência da Computação",
-    "formation": "Formação"
+    "formation": "Formação",
+    "close": "Fechar",
+    "firstName": "Primeiro Nome",
+    "lastName": "Ultimo Nome",
+    "email": "Email",
+    "phone": "Celular",
+    "description": "Descrição",
+    "submit": "Enviar",
+    "sending": "Enviando"
   },
   "Header": {
     "home": "Inicio",
