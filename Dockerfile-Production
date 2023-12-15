@@ -5,7 +5,7 @@ RUN apk add --no-cache yarn
 WORKDIR /app
 COPY package*.json ./
 COPY yarn.lock ./
-RUN yarn install --frozen-lockfile
+RUN yarn install --frozen-lockfile --no-production
 COPY . .
 RUN yarn build
 RUN yarn install --production --frozen-lockfile
