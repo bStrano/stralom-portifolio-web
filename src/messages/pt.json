@@ -18,7 +18,7 @@
     "advanced": "Avançado",
     "native": "Nativo",
     "developer": "Desenvolvedor",
-    "techLead": "Tech Lead",
+    "techLead": "Lider Técnico",
     "local": "Local",
     "course": "Curso",
     "computerScience": "Ciência da Computação",
@@ -79,6 +79,9 @@
       "english": "Inglês",
       "techniques": "Técnicas",
       "showSkills": "Clique para ver as habilidades"
+    },
+    "Values": {
+      "description": "I'm a Fullstack Developer at HitCode Tecnologia, a digital solutions company that serves clients of different segments and sizes. I have more than 5 years of experience in fullstack development, both for web and mobile, using React.js, Node.js and React Native technologies. I have a bachelor's degree in Computer Science from Universidade Presbiteriana Mackenzie, where I acquired solid theoretical and practical training in programming, algorithms, data structures, databases, artificial intelligence, among other areas. Contribute to the development of new features, using best practices and code standards. I am passionate about technology, innovation and continuous learning, and I always try to stay up to date with market trends and news. My goal is to create solutions that generate value for customers and users, using my knowledge, my creativity and my leadership."
     }
   },
   "Projects": {
