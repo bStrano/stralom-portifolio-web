@@ -1,13 +1,16 @@
 import React from "react";
 import {ProjectsSection} from "@/app/[locale]/projects/_components/Section";
+import Section from "@/app/_components/Section";
+import {useTranslations} from "next-intl";
 
 
 
 
-export default function Home() {
+export default function Projects() {
+    const t = useTranslations('Projects');
     return (
-        <main className={'flex-1 py-10 bg-gradient-to-r from-blue-dark to-blue-dark-4 '}>
+        <Section title={t('title')}>
             <ProjectsSection/>
-        </main>
+        </Section>
     )
 }

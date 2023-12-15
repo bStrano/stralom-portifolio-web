@@ -33,6 +33,7 @@
     "sending": "Submitting"
   },
   "About": {
+    "title": "About Me",
     "Labels": {
       "generalInformation": "General Information",
       "name": "Name",
@@ -77,6 +78,7 @@
     "contact": "Contact"
   },
   "Skills": {
+    "title": "Technical Skills",
     "sections": {
       "languages": "Languages",
       "frontend": "Frontend",
@@ -84,7 +86,11 @@
       "others": "Others"
     }
   },
+  "Contact": {
+    "title": "Contact forms"
+  },
   "Projects": {
+    "title": "Projects",
     "types": {
       "personal": "Personal",
       "professional": "Professional"

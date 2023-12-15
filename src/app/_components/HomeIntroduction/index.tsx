@@ -10,7 +10,7 @@ function HomeIntroduction(props: IHomeIntroductionProps) {
     const t = useTranslations('HomeIntroduction');
 
     return (
-        <section className={'p-10 bg-gradient-to-r from-blue-dark to-blue-dark-4 flex  h-[calc(100vh-75px)] justify-center items-center'}>
+        <section className={'p-10  flex  h-[calc(100vh-80px)] justify-center items-center'}>
             <FlashLight />
             {/*<Shower items={[*/}
             {/*    'logos:react',*/}

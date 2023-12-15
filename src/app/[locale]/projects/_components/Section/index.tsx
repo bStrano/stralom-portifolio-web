@@ -12,11 +12,11 @@ export function ProjectsSection() {
     }
 
     return (
-        <div className={'flex flex-1 w-full flex-col justify-center items-center'}>
+        <div className={'w-full flex-col'}>
             {
                 Array.from(data).map(([key, value]) => {
                         return <div key={key}>
-                            <h1 className={'text-3xl font-bold mx-24 my-5 text-blue-dark-11'}>{key}</h1>
+                            <h1 className={'text-3xl font-bold my-5 text-blue-dark-11'}>{key}</h1>
                             {renderProjects(value)}
                         </div>
                     }

@@ -3,6 +3,7 @@ import type {Metadata} from 'next'
 import {Montserrat} from 'next/font/google'
 import React from "react";
 import Header from "@/app/_components/Header";
+import {twMerge} from "tailwind-merge";
 
 const inter = Montserrat({subsets: ['latin']})
 
@@ -20,7 +21,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" className={'z-20'}>
-        <body className={inter.className}>
+        <body className={twMerge('bg-gradient-to-r from-blue-dark to-blue-dark-4 ', inter.className)}>
             <Header/>
             {children}
         </body>

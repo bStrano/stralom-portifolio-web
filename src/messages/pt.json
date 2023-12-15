@@ -40,6 +40,7 @@
     "contact": "Contato"
   },
   "Skills": {
+    "title": "Habilidades Técnicas",
     "sections": {
       "languages": "Linguagens",
       "frontend": "Frontend",
@@ -47,7 +48,11 @@
       "others": "Outros"
     }
   },
+  "Contact": {
+    "title": "Formas de Contato"
+  },
   "About": {
+    "title": "Sobre mim",
     "Labels": {
       "generalInformation": "Informações Gerais",
       "name": "Nome",
@@ -85,6 +90,7 @@
     }
   },
   "Projects": {
+    "title": "Projects",
     "types": {
       "personal": "Personal",
       "professional": "Professional"

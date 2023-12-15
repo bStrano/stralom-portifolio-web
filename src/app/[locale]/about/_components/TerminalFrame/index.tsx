@@ -9,7 +9,7 @@ interface ITerminalFrameProps {
 
 function TerminalFrame({children, title, icon}: ITerminalFrameProps) {
  return (
-    <div className={'m-5'}>
+    <div className={'m-7 ml-0'}>
         <div className={'flex justify-between px-6 py-3 bg-dracula-selection w-full rounded-t-2xl'}>
             <span className={'text-white font-medium'}>{title}</span>
             <Icon icon={icon} className={'text-dracula-cyan'}/>
