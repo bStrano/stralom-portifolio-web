@@ -18,7 +18,7 @@ function Header(props: IHeaderProps) {
 
     return (
         <nav className="flex flex-1 flex-row bg-black sticky top-0">
-            <div className={'sm:hidden md:block flex-1'}>
+            <div className={'hidden md:block flex-1'}>
                 <LargeMenu/>
             </div>
 

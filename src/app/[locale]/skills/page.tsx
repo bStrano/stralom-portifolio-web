@@ -9,7 +9,7 @@ export default function SkillsPage() {
     return (
         <Section title={t('title')}>
             <div
-                className={'gap-10 overflow-auto'}>
+                className={'gap-10 overflow-auto overflow-x-hidden'}>
                 <div className={'flex flex-col gap-10'}>
                     <SkillSection title={t('sections.languages')} skills={[
                         {

@@ -14,8 +14,8 @@ export default function AboutPage() {
     return (
         <Section title={about('title')}>
             <div
-                className={'grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 min-h-screen'}>
-                <div>
+                className={'grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 min-h-screen gap-7'}>
+                <div className={'flex flex-col gap-7'}>
                     <TerminalFrame title={labels('generalInformation')} icon={'ic:twotone-info'}>
                         <div className={'flex flex-1 flex-col'}>
                             <CodeTag name={labels('name')} description={'Bruno Lombardi Strano'}/>
@@ -50,7 +50,7 @@ export default function AboutPage() {
                         <CodeTag name={words('local')} description={words('saoPaulo')} />
                     </TerminalFrame>
                 </div>
-                <div>
+                <div className={'flex flex-col gap-7'}>
                     <TerminalFrame title={labels('professionalExperience')} icon={'ic:twotone-work'}>
                         <CodeTag name={labels('experience')} >
                             <CodeTag name={labels('company')} description={'HitCode Tecnologia'}

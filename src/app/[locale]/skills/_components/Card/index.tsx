@@ -14,7 +14,7 @@ function SkillCard({ icon, title }: ISkillCardProps) {
     return (
         <div
             data-expanded={expanded}
-            className={'flex flex-col justify-center items-center  rounded shadow-lg overflow-hidden w-40 h-40 max-w-sm bg-blue-dark-6 data-[expanded="true"]:animate-wiggle'}
+            className={'flex flex-col justify-center items-center  rounded shadow-lg overflow-hidden w-38 h-36 md:w-40 md:h-40 sm:w-30 max-w-sm bg-blue-dark-6 data-[expanded="true"]:animate-wiggle'}
         onMouseOver={() => setExpanded(true)}
         onMouseLeave={() => setExpanded(false)}
         >

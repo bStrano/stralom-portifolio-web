@@ -71,7 +71,7 @@ export default function MailForm(props: MailFormProps) {
     }
 
     return (
-        <form onSubmit={onSubmit} className={'flex flex-1 flex-col p-10'}>
+        <form onSubmit={onSubmit} className={'flex flex-1 flex-col p-0 md:p-10'}>
             <Toast title={'Mensagem enviada com sucesso!'} type={'success'} visible={successToast}/>
             <div className="grid gap-6 mb-6 md:grid-cols-2">
                 <div>
