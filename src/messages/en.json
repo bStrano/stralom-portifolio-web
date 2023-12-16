@@ -93,7 +93,7 @@
     "title": "Projects",
     "types": {
       "personal": "Personal",
-      "professional": "Professional"
+      "professional": "Corporative"
     },
     "data": {
       "privatePension": {
@@ -145,8 +145,8 @@
         "description": "My first professional experience involved maintaining an existing application, focused on the traceability of biological bags. The main focus was GPS tracking and temperature monitoring of medications during transport between clinics. The application uses Bluetooth technology to communicate with the tags responsible for temperature monitoring, in addition to using the cell phone's location to obtain geolocation. All this information was recorded and fed into an administrative website with a detailed dashboard about the tags."
       },
       "seriousGames": {
-        "title": "TCC - Serius Games Aprendendo a programar",
-        "description": "My course completion work at college addressed the advantages of \"Serious Games\", games aimed at teaching. I developed a 2D game with phases to teach about the initial elements of programming, such as commands, conditionals, functions and loops. Each session offered several phases, starting with guided tutorials to help the player understand the concepts. The subsequent phases presented challenges, in which the user used visual commands to create executable algorithms. The game, with an RPG theme, challenged the player to collect coins, open the treasure chest and face obstacles, such as optimizing paths limited by commands and fighting monsters. This was my first foray into the world of gaming, providing an extremely pleasant experience and resulting in a remarkably interesting final product."
+        "title": "TCC - Serious Games Aprendendo a programar",
+        "description": "My course completion work at university addressed the advantages of \"Serious Games\", games aimed at teaching. I developed a 2D game with phases to teach about the initial elements of programming, such as commands, conditionals, functions and loops. Each session offered several phases, starting with guided tutorials to help the player understand the concepts. The subsequent phases presented challenges, in which the user used visual commands to create executable algorithms. The game, with an RPG theme, challenged the player to collect coins, open the treasure chest and face obstacles, such as optimizing paths limited by commands and fighting monsters. This was my first foray into the world of gaming, providing an extremely pleasant experience and resulting in a remarkably interesting final product."
       },
       "shipping": {
         "title": "Shipping Manager",
@@ -154,7 +154,7 @@
       },
       "marketList": {
         "title": "Market List",
-        "description": "My first major project, excluding those developed during college, was designed to prepare me for my first job, and as an added benefit, it was created to make grocery shopping easier. It is an application designed to function as a shopping list, integrated with a stock control module, where all items added to the list automatically update the grocery stock. Initially, I used an SQLite database to store the data locally on the device; later, part of the application was migrated to the Firebase Realtime Database, aiming for cloud storage."
+        "description": "My first major project, excluding those developed during university, was designed to prepare me for my first job, and as an added benefit, it was created to make grocery shopping easier. It is an application designed to function as a shopping list, integrated with a stock control module, where all items added to the list automatically update the grocery stock. Initially, I used an SQLite database to store the data locally on the device; later, part of the application was migrated to the Firebase Realtime Database, aiming for cloud storage."
       }
     }
   }

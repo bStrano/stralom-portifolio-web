@@ -2,19 +2,21 @@ import Image from "next/image";
 import {useMemo} from "react";
 import {ProjectTag} from "@/app/[locale]/projects/_components/ProjectTag";
 import {ProjectInterface} from "@/app/[locale]/projects/_types/ProjectInterface";
+import {useTranslations} from "next-intl";
 
 
 export const ProjectCard = (props: ProjectInterface) => {
+    const t = useTranslations('Projects');
     const {title, description, image, skills} = props;
 
     const renderTypeTag = useMemo(() => {
         switch (props.type) {
             case 'CORPORATE':
                 return <span
-                    className="text-dracula-pink font-thin italic  text-sm me-2 px-2 py-1 rounded-full">Corporative</span>;
+                    className="text-dracula-pink font-thin italic  text-sm me-2 px-2 py-1 rounded-full">{t('types.professional')}</span>;
             case 'PERSONAL':
                 return <span
-                    className="text-dracula-green font-thin  italic text-sm  me-2 px-2 py-1 rounded-full">Personal</span>;
+                    className="text-dracula-green font-thin  italic text-sm  me-2 px-2 py-1 rounded-full">{t('types.personal')}</span>;
         }
     }, [props.type]);
 
