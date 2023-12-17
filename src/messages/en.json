@@ -126,7 +126,7 @@
       },
       "eventManager": {
         "title": "Event Manager",
-        "description": "application aimed at creating attendance lists at events, aimed at organizers. This feature allowed obtaining the list of participants and checking them, as well as confirming presence, by reading the QRCode on the guests' badges. It is worth mentioning that the application operated offline, making it possible to obtain lists at the beginning and send them to the server at the end of the events."
+        "description": "Application aimed at creating attendance lists at events, aimed at organizers. This feature allowed obtaining the list of participants and checking them, as well as confirming presence, by reading the QRCode on the guests' badges. It is worth mentioning that the application operated offline, making it possible to obtain lists at the beginning and send them to the server at the end of the events."
       },
       "seedSales": {
         "title": "Seed Sales",
@@ -154,7 +154,7 @@
       },
       "shipping": {
         "title": "Shipping Manager",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+        "description": "A project aimed at the logistical control of the loading of pallets and big bags, this system aimed to perform the beeping of materials to carry out effective logistics management. The flow involved obtaining the loading locations, listing the loads, the lots associated with each load, performing the batch copying and, finally, completing the load. The user had a complete breakdown of the shipment, including all relevant information, along with the bleeped and remaining batches. The application was integrated with an ERP, therefore, it did not include any web part; was developed for the purpose of feeding and consuming ERP data."
       },
       "marketList": {
         "title": "Market List",
