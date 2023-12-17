@@ -12,7 +12,7 @@
     "brazil": "Brazil",
     "internship": "Internship",
     "junior": "Junior",
-    "pleno": "Pleno",
+    "pleno": "",
     "senior": "Senior",
     "intermediate": "Intermediate",
     "advanced": "Advanced",
@@ -30,7 +30,8 @@
     "phone": "Cellphone",
     "description": "Description",
     "submit": "Submit",
-    "sending": "Submitting"
+    "sending": "Submitting",
+    "present": "Present"
   },
   "About": {
     "title": "About Me",
@@ -64,10 +65,11 @@
       "portuguese": "Portuguese",
       "english": "English",
       "techniques": "Technical",
-      "showSkills": "Click to see the skills"
+      "showSkills": "Click to see the skills",
+      "period": "Period"
     },
     "Values": {
-      "description": "Sou um Desenvolvedor Fullstack na HitCode Tecnologia, uma empresa de soluções digitais que atende clientes de diversos segmentos e portes. Tenho mais de 5 anos de experiência em desenvolvimento fullstack, tanto para web quanto para mobile, utilizando as tecnologias React.js, Node.js e React Native. Sou bacharel em Ciência da Computação pela Universidade Presbiteriana Mackenzie, onde adquiri uma sólida formação teórica e prática em programação, algoritmos, estruturas de dados, banco de dados, inteligência artificial, entre outras áreas. Contribua com o desenvolvimento de novas funcionalidades, utilizando as melhores práticas e padrões de código. Sou apaixonado por tecnologia, inovação e aprendizado contínuo, e busco sempre me atualizar sobre as tendências e as novidades do mercado. Meu objetivo é criar soluções que gerem valor para os clientes e para os usuários, utilizando o meu conhecimento, a minha criatividade e a minha liderança."
+      "description": "I'm a Fullstack Developer at HitCode Tecnologia, a digital solutions company that serves clients of different segments and sizes. I have more than 5 years of experience in fullstack development, both for web and mobile, using React.js, Node.js and React Native technologies. I have a bachelor's degree in Computer Science from Universidade Presbiteriana Mackenzie, where I acquired solid theoretical and practical training in programming, algorithms, data structures, databases, artificial intelligence, among other areas. Contribute to the development of new features, using best practices and code standards. I am passionate about technology, innovation and continuous learning, and I always try to stay up to date with market trends and news. My goal is to create solutions that generate value for customers and users, using my knowledge, my creativity and my leadership."
     }
   },
   "Header": {

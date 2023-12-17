@@ -3,6 +3,7 @@ import {CodeTag} from "@/app/[locale]/about/_components/CodeTag";
 import {useTranslations} from "next-intl";
 import TerminalFrame from "@/app/[locale]/about/_components/TerminalFrame";
 import Section from "@/app/_components/Section";
+import PeriodTag from "@/app/[locale]/about/_components/CodeTag/PeriodTag";
 
 
 export default function AboutPage() {
@@ -58,8 +59,7 @@ export default function AboutPage() {
                             <CodeTag name={labels('role')}
                                      description={`${words('techLead')}`}
                             />
-                            <CodeTag name={labels('duration')} description={`2 ${words('years')}`}
-                            />
+                            <PeriodTag start={new Date('01/12/2022')} end={new Date()} label={labels('period')}/>
                         </CodeTag>
                         <CodeTag name={labels('experience')} >
                             <CodeTag name={labels('company')} description={'HitCode Tecnologia'}
@@ -67,8 +67,7 @@ export default function AboutPage() {
                             <CodeTag name={labels('role')}
                                      description={`${words('developer')} ${words('pleno')} FullStack Mobile/Web`}
                             />
-                            <CodeTag name={labels('duration')} description={`2 ${words('years')}`}
-                            />
+                            <PeriodTag start={new Date('01/12/2020')} end={new Date('12/31/2021')} label={labels('period')}/>
                         </CodeTag>
                         <CodeTag name={labels('experience')} >
                             <CodeTag name={labels('company')} description={'HitCode Tecnologia'}
@@ -76,8 +75,7 @@ export default function AboutPage() {
                             <CodeTag name={labels('role')}
                                      description={`${words('developer')} ${words('junior')} Fullstack Mobile`}
                             />
-                            <CodeTag name={labels('duration')} description={`1 ${words('years')}`}
-                            />
+                            <PeriodTag start={new Date('01/01/2019')} end={new Date('12/31/2019')} label={labels('period')}/>
                         </CodeTag>
                         <CodeTag name={labels('experience')} >
                             <CodeTag name={labels('company')} description={'HitCode Tecnologia'}
@@ -85,8 +83,7 @@ export default function AboutPage() {
                             <CodeTag name={labels('role')}
                                      description={`${words('developer')} ${words('internship')} Mobile`}
                             />
-                            <CodeTag name={labels('duration')} description={`3 ${words('months')}`}
-                            />
+                            <PeriodTag start={new Date('09/01/2018')} end={new Date('12/31/2018')} label={labels('period')}/>
                         </CodeTag>
                     </TerminalFrame>
                     <TerminalFrame title={labels('skills')} icon={'ph:wrench-duotone'}>

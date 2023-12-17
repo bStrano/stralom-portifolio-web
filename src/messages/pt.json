@@ -30,7 +30,8 @@
     "phone": "Celular",
     "description": "Descrição",
     "submit": "Enviar",
-    "sending": "Enviando"
+    "sending": "Enviando",
+    "present": "Presente"
   },
   "Header": {
     "home": "Inicio",
@@ -83,7 +84,8 @@
       "portuguese": "Português",
       "english": "Inglês",
       "techniques": "Técnicas",
-      "showSkills": "Clique para ver as habilidades"
+      "showSkills": "Clique para ver as habilidades",
+      "period": "Período"
     },
     "Values": {
       "description": "Sou um Desenvolvedor Fullstack na HitCode Tecnologia, uma empresa de soluções digitais que atende clientes de diversos segmentos e portes. Tenho mais de 5 anos de experiência em desenvolvimento fullstack, tanto para web quanto para mobile, utilizando as tecnologias React.js, Node.js e React Native. Sou bacharel em Ciência da Computação pela Universidade Presbiteriana Mackenzie, onde adquiri uma sólida formação teórica e prática em programação, algoritmos, estruturas de dados, banco de dados, inteligência artificial, entre outras áreas. Contribuo com o desenvolvimento de novas funcionalidades, utilizando as melhores práticas e padrões de código. Sou apaixonado por tecnologia, inovação e aprendizado contínuo, e busco sempre me atualizar sobre as tendências e as novidades do mercado. Meu objetivo é criar soluções que gerem valor para os clientes e aos usuários, utilizando o meu conhecimento, a minha criatividade e a minha liderança."
