@@ -31,7 +31,7 @@ export const ProjectCard = (props: ProjectInterface) => {
                     className={'rounded-lg hidden lg:block'}
                     src={image} alt={'Project illustration'}/>
                 <div className={'flex-col lg:pl-20 md:px-0 justify-start'}>
-                    <div className="flex flex-col justify-start gap-2 mt-3">
+                    <div className="flex flex-col justify-start gap-2 mt-1">
                         <div className={'flex flex-row items-center'}>
                             <h2 className="text-2xl font-bold text-white pr-4">{title}</h2>
                             {renderTypeTag}

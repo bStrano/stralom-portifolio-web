@@ -126,19 +126,23 @@
       },
       "eventManager": {
         "title": "Event Manager",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+        "description": "Aplicativo voltado para a elaboração de listas de presença em eventos, direcionado aos organizadores. Esse recurso permitia a obtenção da lista de participantes e a verificação, bem como a confirmação de presença, por meio da leitura do QRCode nos crachás dos convidados. Vale ressaltar que o aplicativo operava de forma offline, possibilitando a obtenção das listas no início e o envio para o servidor ao final dos eventos."
       },
       "seedSales": {
         "title": "Venda de Sementes",
         "description": "O aplicativo tem como objetivo principal fornecer diversos indicadores para aprimorar as atividades de vendas de sementes e produtos correlacionados na empresa. Além disso, oferece um \"dicionário\" completo dos clientes, permitindo que os vendedores registrem informações sobre suas interações, acessem o histórico completo de compras, detalhes das vendas e indicadores relevantes para uma abordagem mais eficaz. Adicionalmente, integra um módulo de atividades com o Google Agenda, possibilitando que as equipes organizem tarefas de maneira eficiente e atribuam responsabilidades entre os membros. Essas funcionalidades visam otimizar o desempenho e a colaboração no processo de vendas."
+      },
+      "seedSales2": {
+        "title": "Seed Sales",
+        "description": "O aplicativo tem como objetivo principal em oferecer uma extensa variedade de indicadores com o intuito de aprimorar as operações de venda de sementes e produtos correlatos na empresa. Com mais de 20 gráficos, a ferramenta visa auxiliar os vendedores nas decisões estratégicas. Dada a natureza do uso, principalmente em visitas a clientes em fazendas, onde a conectividade nem sempre está disponível, a principal meta do aplicativo é operar de maneira totalmente offline. Os dados, provenientes de um banco de dados, eram tratados e simplificados antes de serem enviados ao aplicativo, evitando que a elevada quantidade de dados afetasse o tempo de carregamento da aplicação.\n\nEm 2022, o aplicativo foi descontinuado, cedendo lugar a uma versão mais recente que apresenta um número menor de gráficos. Contudo, essa nova versão oferece uma usabilidade aprimorada, com indicadores mais objetivos e números mais significativos. A mudança visa eliminar a complexidade na análise por parte dos vendedores, proporcionando dados mais simplificados e acessíveis."
       },
       "seedShipping": {
         "title": "Seed Shipping",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
       },
       "activesMonitoring": {
-        "title": "Seed Production",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+        "title": "Monitoramento de Ativos",
+        "description": "Projeto de curto prazo centrado no monitoramento de ativos. Nesse contexto, os ativos estavam equipados com tags que permitiam o rastreamento. Ao atravessarem a porta designada, as tags acionavam um alarme. Minha contribuição para esse projeto envolveu o desenvolvimento do aplicativo responsável por receber essas informações e notificar a equipe de segurança sobre possíveis furtos de ativos, fornecendo detalhes sobre o ativo em questão e sua localização."
       },
       "medicineTracker": {
         "title": "Rastreabilidade de Medicamentos",

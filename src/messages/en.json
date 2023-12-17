@@ -126,19 +126,23 @@
       },
       "eventManager": {
         "title": "Event Manager",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+        "description": "application aimed at creating attendance lists at events, aimed at organizers. This feature allowed obtaining the list of participants and checking them, as well as confirming presence, by reading the QRCode on the guests' badges. It is worth mentioning that the application operated offline, making it possible to obtain lists at the beginning and send them to the server at the end of the events."
       },
       "seedSales": {
         "title": "Seed Sales",
         "description": "The application's main objective is to provide several indicators to improve the sales activities of seeds and related products in the company. Additionally, it offers a complete \"dictionary\" of customers, allowing sellers to record information about their interactions, access complete purchase history, sales details and relevant indicators for a more effective approach. Additionally, it integrates an activities module with Google Calendar, enabling teams to organize tasks efficiently and assign responsibilities among members. These features aim to optimize performance and collaboration in the sales process."
+      },
+      "seedSales2": {
+        "title": "Seed Sales",
+        "description": "The application's main objective is to offer an extensive variety of indicators with the aim of improving the company's seed and related product sales operations. With more than 20 charts, the tool aims to help sellers make strategic decisions. Given the nature of use, mainly when visiting customers on farms, where connectivity is not always available, the main goal of the application is to operate completely offline. The data, coming from a database, was processed and simplified before being sent to the application, preventing the large amount of data from affecting the application's loading time.\n"
       },
       "seedShipping": {
         "title": "Seed Shipping",
         "description": "A project aimed at the logistical control of the loading of pallets and big bags, this system aimed to perform the beeping of materials to carry out effective logistics management. The flow involved obtaining the loading locations, listing the loads, the lots associated with each load, performing the batch copying and, finally, completing the load. The user had a complete breakdown of the shipment, including all relevant information, along with the bleeped and remaining batches. The application was integrated with an ERP, therefore, it did not include any web part; was developed for the purpose of feeding and consuming ERP data."
       },
       "activesMonitoring": {
-        "title": "Seed Production",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+        "title": "Actives Monitoring",
+        "description": "Short-term project focused on asset monitoring. In this context, assets were equipped with tags that allowed tracking. When passing through the designated door, the tags would trigger an alarm. My contribution to this project involved developing the application responsible for receiving this information and notifying the security team about possible asset theft, providing details about the asset in question and its location."
       },
       "medicineTracker": {
         "title": "Medicine Tracker",
