@@ -2,6 +2,8 @@
 import React from 'react';
 import {Icon, IconProps} from "@iconify/react";
 import {useRouter} from "next-intl/client";
+import {usePathname} from "next/navigation";
+import {useLocale} from "next-intl";
 
 interface IFlagButtonProps  extends IconProps{
     locale: string
@@ -9,10 +11,18 @@ interface IFlagButtonProps  extends IconProps{
 
 function FlagButton(props: IFlagButtonProps) {
     const router = useRouter();
+    const pathname = usePathname()
+    const currentLocale = useLocale();
+
 
 
     const switchLocale = (locale: string) => {
-        router.replace('/', {locale});
+        let newPathname = pathname;
+        if(currentLocale !== 'en') {
+            const regex = new RegExp(`/${currentLocale}`, 'g');
+            newPathname = newPathname.replace(regex, '')
+        }
+        router.replace(newPathname, {locale});
     }
 
  return (
