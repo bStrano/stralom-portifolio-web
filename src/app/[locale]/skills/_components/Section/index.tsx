@@ -8,7 +8,7 @@ interface ISkillSectionProps {
 
 function SkillSection({title, skills}: ISkillSectionProps) {
  return (
-  <div className={'flex flex-1 flex-col pb-20'}>
+  <div className={'flex flex-1 flex-col pb-10'}>
     <h1 className={'text-white text-lg pb-3'}>
         {title}
     </h1>

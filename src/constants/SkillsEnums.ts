@@ -31,5 +31,6 @@ export enum SkillsEnums {
     REDIS = 'redis',
     ANDROID = 'android',
     SQLITE = 'sqlite',
+    VERCEL = 'vercel',
 }
 

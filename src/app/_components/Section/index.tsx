@@ -8,7 +8,7 @@ interface ISectionProps {
 
 function Section({children, title}: ISectionProps) {
  return (
-     <div className={'flex flex-1 flex-col pt-16 mx-5 md:mx-24 pb-20'}>
+     <div className={'flex flex-1 flex-col pt-16 mx-5 md:mx-10 lg:mx-15 xl:mx-24 pb-20'}>
          <SectionTitle title={title}/>
          {children}
      </div>

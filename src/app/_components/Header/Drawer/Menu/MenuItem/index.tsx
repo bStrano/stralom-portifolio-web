@@ -10,7 +10,7 @@ interface IMenuItemProps {
 function MenuItem({title, href}: IMenuItemProps) {
  return (
   <>
-      <Link className={'text-white inline-block p-5 hover:font-bold hover:bg-text-gradient'} href={href}>{title}</Link>
+      <Link className={'w-full text-white inline-block p-5 hover:font-bold hover:bg-text-gradient'} href={href}>{title}</Link>
       <Divider/>
   </>
  );}

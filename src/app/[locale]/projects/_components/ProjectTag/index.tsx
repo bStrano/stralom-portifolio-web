@@ -140,7 +140,11 @@ const skills: GenericLookupInterface<SkillsEnums, SkillLookupInterface> = {
     [SkillsEnums.ANDROID]: {
         title: 'Android',
         color: 'green'
-    }
+    },
+    [SkillsEnums.VERCEL]: {
+        title: 'Vercel',
+        color: 'slate'
+    },
 }
 
 export function ProjectTag({skill}: ProjectTagInterface) {

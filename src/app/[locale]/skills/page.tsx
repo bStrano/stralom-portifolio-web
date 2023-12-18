@@ -9,8 +9,8 @@ export default function SkillsPage() {
     return (
         <Section title={t('title')}>
             <div
-                className={'gap-10 overflow-auto overflow-x-hidden'}>
-                <div className={'flex flex-col gap-10'}>
+                className={' overflow-auto overflow-x-hidden'}>
+                <div className={'flex flex-col'}>
                     <SkillSection title={t('sections.languages')} skills={[
                         {
                             title: 'Typescript',
