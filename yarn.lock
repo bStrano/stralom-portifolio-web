@@ -1086,6 +1086,11 @@ chokidar@^3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
+clarity-js@^0.7.21:
+  version "0.7.21"
+  resolved "https://registry.yarnpkg.com/clarity-js/-/clarity-js-0.7.21.tgz#5a65975250c1812b71a2fe7a2760b6462b92812f"
+  integrity sha512-gYKwACravH6q5gOEIGnkPz2LijKJQ4M4fEXTWpC0ePIYmVW2ohztGXVtptICC2W7s1B1SmgmKi8BJ9XNYv7KVA==
+
 client-only@0.0.1:
   version "0.0.1"
   resolved "https://registry.npmjs.org/client-only/-/client-only-0.0.1.tgz"
