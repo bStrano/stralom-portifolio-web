@@ -26,7 +26,7 @@ function FlashLight() {
 
             <div
                 id="light3"
-                className={"w-120 h-120 bg-gradient-radial   absolute rounded-full pointer-events-none"}
+                className={"w-120 h-120 bg-gradient-radial   fixed rounded-full pointer-events-none"}
                 style={{ top: `${position.top - 160}px`, left: `${position.left - 160}px` }}
             />
 
