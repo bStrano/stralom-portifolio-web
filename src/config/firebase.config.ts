@@ -11,12 +11,19 @@ const firebaseConfig = {
     appId: process.env.FIREBASE_APP_ID,
     measurementId: process.env.FIREBASE_MEASUREMENT_ID,
 };
+let initialized = false;
 
-console.log("Initializing Firebase");
-if(typeof  window !== "undefined" && !firebase.apps.length) {
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
+const initializeFirebase = () => {
+    if(initialized) return firebase;
+    if(typeof window !== "undefined") {
+        console.log("Initializing Firebase");
+        if(process.env.NODE_ENV === 'production'){
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+        }
+    }
+    initialized = true;
+    return firebase;
 }
-
-
+export {initializeFirebase};
 export default firebase;

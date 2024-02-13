@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 
 
 import Script from 'next/script';
+import FirebaseConfig from "@/app/[locale]/firebase-config";
 
 const clairtyCode = `
 (function (c,l,a,r,i,t,y){
@@ -29,14 +30,18 @@ export default function RootLayout({
     children: React.ReactNode
     params: { locale: string }
 }) {
-    console.log(process.env);
     return (
         <html lang="en" className={'z-20'}>
-        <Script id="ms-clarity" strategy="afterInteractive">
-            {clairtyCode}
-        </Script>
+        {
+            process.env.NODE_ENV === 'production' && (
+                <Script id="ms-clarity" strategy="afterInteractive">
+                    {clairtyCode}
+                </Script>
+            )
+        }
         <body className={twMerge('bg-gradient-to-r from-blue-dark to-blue-dark-4 ', inter.className)}>
             <Header/>
+            <FirebaseConfig/>
             {children}
         </body>
         </html>
