@@ -1,5 +1,3 @@
-'use client'
-import React, {useEffect} from 'react';
 import {initializeFirebase} from "@/config/firebase.config";
 
 interface IFirebaseConfigProps {
@@ -7,9 +5,7 @@ interface IFirebaseConfigProps {
 }
 
 function FirebaseConfig(props: IFirebaseConfigProps) {
-    useEffect(() => {
-        initializeFirebase();
-    }, []);
+    initializeFirebase();
 
     return null;
 }
