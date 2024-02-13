@@ -30,18 +30,18 @@ function HomeIntroduction(props: IHomeIntroductionProps) {
             <article>
                 <div className={'z-50'}>
                     <div>
-                        <p className={'text-xl text-blue-dark-11 bg-text-gradient'}>{t('welcome')}</p>
+                        <p className={'select-none text-xl text-blue-dark-11 bg-text-gradient'}>{t('welcome')}</p>
                         <h1>
                             <div>
                                 {
                                     'Bruno Lombardi Strano'.split('').map((char, index) => (
-                                        <span key={index} className={'text-[6vw] font-bold text-blue-dark-11 inline-block hover:animate-wiggle whitespace-break-spaces hover:bg-text-gradient'}>
+                                        <span key={index} className={'select-none text-[6vw] font-bold text-blue-dark-11 inline-block hover:animate-wiggle whitespace-break-spaces hover:bg-text-gradient'}>
                                       {char}
                                     </span>
                                     ))}
                             </div>
                         </h1>
-                        <p className={'text-xl text-blue-dark-11 bg-text-gradient'}>{t('description')}</p>
+                        <p className={'select-none text-xl text-blue-dark-11 bg-text-gradient'}>{t('description')}</p>
                     </div>
                 </div>
             </article>
