@@ -5,6 +5,8 @@ import MagneticText from "../MagneticText";
 import ScrollHint from "../ScrollHint";
 import {useTranslations} from "next-intl";
 
+const EXPERIENCE_START_YEAR = 2018;
+
 const SHOWER_ICONS = [
     'logos:react',
     'logos:nodejs',
@@ -27,6 +29,7 @@ interface IHomeIntroductionProps {
 
 function HomeIntroduction(props: IHomeIntroductionProps) {
     const t = useTranslations('HomeIntroduction');
+    const years = new Date().getFullYear() - EXPERIENCE_START_YEAR;
 
     return (
         <section className={'relative overflow-hidden p-10 flex h-[calc(100vh-80px)] justify-center items-center'}>
@@ -46,7 +49,7 @@ function HomeIntroduction(props: IHomeIntroductionProps) {
                                 />
                             </div>
                         </h1>
-                        <p className={'select-none text-xl text-blue-dark-11 bg-text-gradient'}>{t('description')}</p>
+                        <p className={'select-none text-xl text-blue-dark-11 bg-text-gradient'}>{t('description', {years})}</p>
                     </div>
                 </div>
             </article>

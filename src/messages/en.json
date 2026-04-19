@@ -1,7 +1,7 @@
 {
   "HomeIntroduction": {
     "welcome": "Hello! My name is",
-    "description": "I'm a full stack developer with more than five years of experience in Web and Mobile applications. "
+    "description": "Full stack developer with {years}+ years building Web, Mobile apps and APIs. From frontend to backend, any tech challenge."
   },
   "Words": {
     "years": "years",
