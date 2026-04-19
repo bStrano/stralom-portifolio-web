@@ -89,7 +89,8 @@
     }
   },
   "Contact": {
-    "title": "Contact forms"
+    "title": "Contact forms",
+    "subtitle": "Got a project in mind or just want to say hi? Pick the channel you prefer or drop me a message right here."
   },
   "Projects": {
     "title": "Projects",

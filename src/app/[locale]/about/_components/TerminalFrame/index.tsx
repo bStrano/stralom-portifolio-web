@@ -1,6 +1,6 @@
 'use client';
 import React, {useEffect, useState} from 'react';
-import Icon from "@/app/_components/Icon";
+import {Icon} from "@iconify/react";
 
 interface ITerminalFrameProps {
     title: string;
@@ -37,7 +37,7 @@ function TerminalFrame({children, title, icon, delayMs = 0}: ITerminalFrameProps
                 <span className="absolute left-1/2 -translate-x-1/2 text-sm text-blue-dark-11 font-medium select-none">
                     {title}
                 </span>
-                <Icon icon={icon} className="ml-auto text-dracula-cyan"/>
+                <Icon icon={icon} className="ml-auto text-dracula-cyan" width={22} height={22}/>
             </div>
             <div className="flex flex-1 py-5">
                 <div className="flex flex-1 flex-col">
