@@ -33,3 +33,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.idea/.gitignore
+.idea/aws.xml
+.idea/conventionalCommit.xml
+.idea/git_toolbox_prj.xml
+.idea/markdown.xml
+.idea/modules.xml
+.idea/rcb-settings.xml
+.idea/stralom-portifolio-web.iml
+.idea/vcs.xml
+.idea/watcherTasks.xml
+.idea/webServers.xml
+.idea/inspectionProfiles/Project_Default.xml
