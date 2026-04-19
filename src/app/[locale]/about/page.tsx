@@ -4,20 +4,26 @@ import {useTranslations} from "next-intl";
 import TerminalFrame from "@/app/[locale]/about/_components/TerminalFrame";
 import Section from "@/app/_components/Section";
 import PeriodTag from "@/app/[locale]/about/_components/CodeTag/PeriodTag";
+import Aurora from "@/app/_components/Aurora";
 
+const EXPERIENCE_START_YEAR = 2018;
 
 export default function AboutPage() {
     const labels = useTranslations('About.Labels');
     const values = useTranslations('About.Values');
     const about = useTranslations('About');
     const words = useTranslations('Words');
+    const years = new Date().getFullYear() - EXPERIENCE_START_YEAR;
 
     return (
         <Section title={about('title')}>
+            <div className="pointer-events-none fixed inset-0 -z-10">
+                <Aurora intensity={30} opacity={0.18}/>
+            </div>
             <div
                 className={'grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 min-h-screen gap-7'}>
                 <div className={'flex flex-col gap-7'}>
-                    <TerminalFrame title={labels('generalInformation')} icon={'ic:twotone-info'}>
+                    <TerminalFrame title={labels('generalInformation')} icon={'ic:twotone-info'} delayMs={0}>
                         <div className={'flex flex-1 flex-col'}>
                             <CodeTag name={labels('name')} description={'Bruno Lombardi Strano'}/>
                             <CodeTag name={labels('birthDate')} description={'03/07/1995'}/>
@@ -41,10 +47,10 @@ export default function AboutPage() {
                                          description={'https://github.com/bStrano'}/>
                             </CodeTag>
                             <CodeTag name={labels('description')}
-                                     description={values('description')} />
+                                     description={values('description', {years})} />
                         </div>
                     </TerminalFrame>
-                    <TerminalFrame title={labels('academyFormation')} icon={'ic:twotone-school'}>
+                    <TerminalFrame title={labels('academyFormation')} icon={'ic:twotone-school'} delayMs={300}>
                         <CodeTag name={labels('institution')} description={'Mackenzie'} />
                         <CodeTag name={labels('course')} description={words('computerScience')} />
                         <CodeTag name={labels('conclusionYear')} description={'2019'} />
@@ -52,7 +58,7 @@ export default function AboutPage() {
                     </TerminalFrame>
                 </div>
                 <div className={'flex flex-col gap-7'}>
-                    <TerminalFrame title={labels('professionalExperience')} icon={'ic:twotone-work'}>
+                    <TerminalFrame title={labels('professionalExperience')} icon={'ic:twotone-work'} delayMs={150}>
                         <CodeTag name={labels('experience')} >
                             <CodeTag name={labels('company')} description={'HitCode Tecnologia'}
                             />
@@ -86,7 +92,7 @@ export default function AboutPage() {
                             <PeriodTag start={new Date('09/01/2018')} end={new Date('12/31/2018')} label={labels('period')}/>
                         </CodeTag>
                     </TerminalFrame>
-                    <TerminalFrame title={labels('skills')} icon={'ph:wrench-duotone'}>
+                    <TerminalFrame title={labels('skills')} icon={'ph:wrench-duotone'} delayMs={450}>
                         <CodeTag name={labels('linguistic')} >
                             <CodeTag name={labels('portuguese')} description={words('native')}
                             />

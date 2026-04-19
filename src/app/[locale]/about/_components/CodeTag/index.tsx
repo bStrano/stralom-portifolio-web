@@ -1,5 +1,5 @@
 import {ReactNode, useMemo} from "react";
-import { twMerge } from 'tailwind-merge'
+import {twMerge} from 'tailwind-merge'
 
 
 export interface CodeTagProps {
@@ -15,16 +15,18 @@ export function CodeTag({name, description, indentationLevel = 1, children, clas
     const marginPerLevel = 30;
     const formattedTagName = useMemo(() => {
         return name.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    },[name])
+    }, [name]);
 
+    const tagColor = children ? 'text-dracula-purple' : 'text-dracula-pink';
 
     return (
-        <div className={description && 'hover:bg-dracula-current-line '}>
-            <div style={{paddingLeft: marginPerLevel*indentationLevel}}>
+        <div className={description ? 'hover:bg-dracula-current-line/30 transition-colors duration-200' : undefined}>
+            <div style={{paddingLeft: marginPerLevel * indentationLevel}}>
                 {
                     (children != null || description != null) &&
                     <>
-                        <a href={href} className={twMerge('font-italic text-dracula-pink',className, href && 'hover:cursor-pointer')}>{`<${formattedTagName}>`}</a>
+                        <a href={href}
+                           className={twMerge('font-italic', tagColor, className, href && 'hover:cursor-pointer')}>{`<${formattedTagName}>`}</a>
                         {
                             children ?
                                 <>
@@ -35,10 +37,10 @@ export function CodeTag({name, description, indentationLevel = 1, children, clas
                                 <a href={href} className={'text-gray-300'}>{` ${description} `}</a>
                         }
                     </>
-
                 }
 
-                <a href={href} className={twMerge('font-italic text-dracula-pink',className)}>{`</${formattedTagName}>`}</a>
+                <a href={href}
+                   className={twMerge('font-italic', tagColor, className)}>{`</${formattedTagName}>`}</a>
             </div>
         </div>
     )
