@@ -2,14 +2,17 @@ import React from "react";
 import SkillSection from "@/app/[locale]/skills/_components/Section";
 import {useTranslations} from "next-intl";
 import Section from "@/app/_components/Section";
+import Aurora from "@/app/_components/Aurora";
 
 export default function SkillsPage() {
     const t = useTranslations('Skills');
 
     return (
         <Section title={t('title')}>
-            <div
-                className={' overflow-auto overflow-x-hidden'}>
+            <div className="pointer-events-none fixed inset-0 -z-10">
+                <Aurora intensity={30} opacity={0.18}/>
+            </div>
+            <div>
                 <div className={'flex flex-col'}>
                     <SkillSection title={t('sections.languages')} skills={[
                         {

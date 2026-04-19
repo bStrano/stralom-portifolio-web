@@ -4,9 +4,11 @@ import React, {useEffect, useRef} from 'react';
 interface IAuroraProps {
     /** Quanto (px) a aurora desloca em parallax com o cursor. Default 70. */
     intensity?: number;
+    /** Opacidade do conjunto (0..1). Default 0.55. */
+    opacity?: number;
 }
 
-function Aurora({intensity = 70}: IAuroraProps) {
+function Aurora({intensity = 70, opacity = 0.55}: IAuroraProps) {
     const wrapRef = useRef<HTMLDivElement>(null);
     const blobRef = useRef<HTMLDivElement>(null);
 
@@ -52,7 +54,7 @@ function Aurora({intensity = 70}: IAuroraProps) {
             aria-hidden
             className="aurora-wrap pointer-events-none absolute inset-0 overflow-hidden"
         >
-            <div ref={blobRef} className="aurora-blob">
+            <div ref={blobRef} className="aurora-blob" style={{opacity}}>
                 <span className="aurora-c aurora-c-pink"/>
                 <span className="aurora-c aurora-c-purple"/>
                 <span className="aurora-c aurora-c-cyan"/>
@@ -67,7 +69,6 @@ function Aurora({intensity = 70}: IAuroraProps) {
                     height: min(110vw, 1100px);
                     transform: translate(-50%, -50%);
                     filter: blur(90px) saturate(0.85);
-                    opacity: 0.55;
                     will-change: transform;
                 }
 
