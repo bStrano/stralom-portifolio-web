@@ -9,23 +9,42 @@ interface IMagneticTextProps {
     strength?: number;
     /** Classe aplicada em cada letra. */
     letterClassName?: string;
+    /** Stagger (ms) entre letras na animação de entrada. Default 45. */
+    enterStagger?: number;
+    /** Atraso inicial (ms) antes da entrada da primeira letra. Default 80. */
+    enterDelay?: number;
 }
 
-function MagneticText({text, radius = 140, strength = 0.35, letterClassName}: IMagneticTextProps) {
+function MagneticText({text, radius = 140, strength = 0.35, letterClassName, enterStagger = 45, enterDelay = 80}: IMagneticTextProps) {
     const spansRef = useRef<Array<HTMLSpanElement | null>>([]);
 
     useEffect(() => {
         let raf = 0;
         let cx = -9999, cy = -9999;
+        const origins: Array<{x: number; y: number} | null> = [];
+
+        const measure = () => {
+            for (let i = 0; i < spansRef.current.length; i++) {
+                const s = spansRef.current[i];
+                if (!s) {
+                    origins[i] = null;
+                    continue;
+                }
+                const prev = s.style.transform;
+                if (prev) s.style.transform = '';
+                const r = s.getBoundingClientRect();
+                if (prev) s.style.transform = prev;
+                origins[i] = {x: r.left + r.width / 2, y: r.top + r.height / 2};
+            }
+        };
 
         const apply = () => {
-            for (const s of spansRef.current) {
-                if (!s) continue;
-                const r = s.getBoundingClientRect();
-                const lx = r.left + r.width / 2;
-                const ly = r.top + r.height / 2;
-                const dx = cx - lx;
-                const dy = cy - ly;
+            for (let i = 0; i < spansRef.current.length; i++) {
+                const s = spansRef.current[i];
+                const o = origins[i];
+                if (!s || !o) continue;
+                const dx = cx - o.x;
+                const dy = cy - o.y;
                 const dist = Math.hypot(dx, dy);
                 if (dist < radius) {
                     const factor = (1 - dist / radius) * strength;
@@ -48,14 +67,21 @@ function MagneticText({text, radius = 140, strength = 0.35, letterClassName}: IM
             if (!raf) raf = requestAnimationFrame(apply);
         };
 
+        // initial measurement after entrance animation finishes
+        const entryMs = enterDelay + text.length * enterStagger + 720 + 50;
+        const initialTimer = window.setTimeout(measure, entryMs);
+
         window.addEventListener('mousemove', onMove);
         window.addEventListener('mouseleave', onLeave);
+        window.addEventListener('resize', measure);
         return () => {
+            window.clearTimeout(initialTimer);
             window.removeEventListener('mousemove', onMove);
             window.removeEventListener('mouseleave', onLeave);
+            window.removeEventListener('resize', measure);
             if (raf) cancelAnimationFrame(raf);
         };
-    }, [radius, strength]);
+    }, [radius, strength, text, enterDelay, enterStagger]);
 
     return (
         <>
@@ -65,17 +91,53 @@ function MagneticText({text, radius = 140, strength = 0.35, letterClassName}: IM
                     ref={(el) => {
                         spansRef.current[i] = el;
                     }}
-                    className={letterClassName}
                     style={{
                         display: 'inline-block',
-                        whiteSpace: 'pre',
                         transition: 'transform 350ms cubic-bezier(0.22, 1, 0.36, 1)',
                         willChange: 'transform',
                     }}
                 >
-                    {char}
+                    <span
+                        className={`magnetic-letter-inner ${letterClassName ?? ''}`}
+                        style={{
+                            display: 'inline-block',
+                            whiteSpace: 'pre',
+                            animationDelay: `${enterDelay + i * enterStagger}ms`,
+                        }}
+                    >
+                        {char}
+                    </span>
                 </span>
             ))}
+
+            <style jsx>{`
+                .magnetic-letter-inner {
+                    opacity: 0;
+                    transform: translateY(28px);
+                    animation: magnetic-letter-in 720ms cubic-bezier(0.22, 1, 0.36, 1) both;
+                }
+
+                @keyframes magnetic-letter-in {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(28px);
+                        filter: blur(6px);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translateY(0);
+                        filter: blur(0);
+                    }
+                }
+
+                @media (prefers-reduced-motion: reduce) {
+                    .magnetic-letter-inner {
+                        animation: none;
+                        opacity: 1;
+                        transform: none;
+                    }
+                }
+            `}</style>
         </>
     );
 }

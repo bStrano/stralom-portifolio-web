@@ -2,6 +2,7 @@ import React from 'react';
 import Aurora from "../Aurora";
 import IconShower from "../IconShower";
 import MagneticText from "../MagneticText";
+import ScrollHint from "../ScrollHint";
 import {useTranslations} from "next-intl";
 
 const SHOWER_ICONS = [
@@ -39,7 +40,9 @@ function HomeIntroduction(props: IHomeIntroductionProps) {
                             <div>
                                 <MagneticText
                                     text={'Bruno Lombardi Strano'}
-                                    letterClassName={'select-none text-[6vw] font-bold text-blue-dark-11 hover:bg-text-gradient'}
+                                    radius={420}
+                                    strength={0.3}
+                                    letterClassName={'select-none text-[6vw] font-bold text-blue-dark-11 hover:bg-gradient-to-r hover:from-mPink hover:to-mYellow hover:bg-clip-text hover:text-transparent'}
                                 />
                             </div>
                         </h1>
@@ -47,6 +50,7 @@ function HomeIntroduction(props: IHomeIntroductionProps) {
                     </div>
                 </div>
             </article>
+            <ScrollHint/>
         </section>
     );
 }
