@@ -93,6 +93,9 @@
   },
   "Projects": {
     "title": "Projetos",
+    "subtitle": "Uma linha do tempo dos projetos que moldaram minha trajetória, de experimentos pessoais a produtos em produção.",
+    "project": "Projeto",
+    "projects": "Projetos",
     "types": {
       "personal": "Pessoal",
       "professional": "Corporativo"
@@ -100,67 +103,67 @@
     "data": {
       "privatePension": {
         "title": "Previdência Privada",
-        "description": "Projeto destinado a gestão de previdência privada, sendo responsável por gerenciar os planos de previdência privada, os clientes e os investimentos. Separado em três grandes módulos sendo eles: Site Institucional, onde o usuário irá encontrar informações publicitarias sobre o plano e a organização; Area Logada, onde o usuário tera acesso a informações sobre seu plano contratado, simulações de outros planos e beneficios, extratos completos, requerimentos de adesão e solicitação de beneficios, atualização de dados cadastrais; E por fim o site Administrativo, responsável por administrar os conteudos exibidos na Area Logada, contando com uma area de quarentena para os requerimentos, logs de sistema, gerenciamento de usuarios, gerenciamento de planos, etc."
+        "description": "Plataforma completa de gestão de previdência privada, dividida em três módulos: site institucional, área logada para clientes (com simulações, extratos e solicitações de benefícios) e portal administrativo para gestão de planos, usuários e requerimentos."
       },
       "portfolio": {
         "title": "Portfólio",
-        "description": "Apresento meu portfólio digital, o site em que você está nesse exato momento, uma síntese concisa de minha carreira e habilidades. Este site tem o propósito de oferecer um breve panorama sobre minha trajetória profissional e competências técnicas. Dividido em quatro seções - \"Sobre\", com um resumo sobre mim; \"Habilidades\", destacando as principais tecnologias que domino; \"Projetos\", listando os projetos nos quais atuei, com breves descrições e tecnologias utilizadas; e \"Contato\", apresentando formas de entrar em contato comigo. Agradeço por explorar este espaço, esperando que forneça uma visão completa e acessível sobre minha experiência profissional."
+        "description": "Meu portfólio digital, o site onde você está neste exato momento. Um resumo conciso da minha trajetória, habilidades e projetos, dividido em Sobre, Habilidades, Projetos e Contato."
       },
       "keychain": {
         "title": "Compartilhador de Senhas",
-        "description": "Com o intuito de explorar o universo do .NET e aplicar conceitos de arquitetura limpa, originou-se este projeto compacto. Dividido em dois módulos, o primeiro atua como um compartilhador de senhas, proporcionando uma alternativa segura para evitar o envio de senhas por chats ou e-mails. O sistema permite a geração de links temporários, nos quais as senhas são automaticamente removidas após um número específico de visualizações ou em uma data predeterminada. O segundo módulo é um cofre de senhas simplificado, oferecendo funcionalidades básicas para o gerenciamento seguro de senhas."
+        "description": "Projeto compacto para explorar .NET aplicando arquitetura limpa. Dois módulos: um compartilhador de senhas via links temporários que se autodestroem após X visualizações ou uma data definida, e um cofre pessoal para gerenciamento seguro."
       },
       "stoneEcommerce": {
         "title": "E-commerce de Pedras",
-        "description": "Plataforma de e-commerce especializada em pedras, atendendo aos setores B2B e B2C, acessível tanto por meio da web quanto por dispositivos móveis. O projeto se divide em dois módulos, com o principal sendo o e-commerce em si. Destaca-se pela oferta de uma experiência única na aquisição de pedras, com opções de pagamento via boleto, cartão e Pix, além de recursos como banners informativos, histórico de pedidos e registro de notas fiscais para aprimorar praticidade e transparência. O segundo módulo compreende uma área administrativa, permitindo o gerenciamento de datas de entrega, usuários, banners e configurações de parâmetros, proporcionando controle eficiente sobre diversos aspectos do sistema."
+        "description": "E-commerce de pedras B2B e B2C, disponível em web e mobile. Pagamento via boleto, cartão e Pix, histórico de pedidos, notas fiscais e uma área administrativa para gerenciar entregas, banners e parâmetros do sistema."
       },
       "cementEcommerce": {
         "title": "E-commerce de Cimento",
-        "description": "Plataforma de e-commerce especializada em cimentos, focada exclusivamente no público B2B. O projeto compreende um aplicativo e um site, divididos em quatro grandes módulos. O primeiro destaca-se como o carro-chefe, consistindo no próprio e-commerce, permitindo que os usuários efetuem compras para diversos CNPJs. Além disso, oferece recursos como verificação de informativos de qualidade dos produtos, cadastro e gerenciamento de vendedores (com a capacidade de personalizar as funcionalidades de acordo com o vendedor), visualização de notas fiscais, consulta de crédito pré-aprovado, entre outros. O segundo módulo destina-se aos vendedores, proporcionando acesso a treinamentos. O terceiro módulo é direcionado ao público em geral, apresentando um Webview de um blog, juntamente com funcionalidades exclusivas, como um mapa de lojas próximas e campanhas publicitárias. Por fim, o módulo administrativo gerencia usuários, campanhas, ocorrências e diversas outras configurações relacionadas ao e-commerce e vendedores."
+        "description": "E-commerce B2B de cimento em app e web, dividido em quatro módulos: compras multi-CNPJ com consulta de crédito pré-aprovado e notas fiscais, treinamentos para vendedores, blog com mapa de lojas próximas e campanhas, e um admin completo."
       },
       "financial": {
         "title": "Gestão Financeira",
-        "description": "Desenvolvi um projeto para meu uso pessoal, visando gerenciar minhas finanças, com controle de transações, investimentos e patrimônio, além de contar com uma variedade de indicadores gráficos para análises detalhadas. A ideia inicial era criar um aplicativo, e o desenvolvimento foi iniciado com foco no gerenciamento de transações. Embora tenha sido interrompida temporariamente, retomei e concluí o projeto em uma versão WEB em 2023. Atualmente, utilizo o sistema e faço aprimoramentos conforme minhas necessidades ao longo do tempo."
+        "description": "Projeto pessoal para gerenciar minhas finanças, com controle de transações, investimentos e patrimônio em indicadores gráficos. Começou como app, foi retomado em 2023 como versão web e evolui conforme minhas necessidades."
       },
       "timeTracker": {
         "title": "Gerenciador de Tempo",
-        "description": "Com o objetivo de explorar o Flutter, empreendi um projeto dedicado à cronometragem do tempo destinado às tarefas profissionais, visando otimizar e categorizar os elementos desenvolvidos durante o trabalho. Essa iniciativa visa aprimorar minha produtividade, proporcionando a capacidade de cronometrar e categorizar tarefas, com a adição de tags para a geração de relatórios gráficos. Isso destaca, de maneira clara e eficiente, as atividades do mês, facilitando a análise das tarefas que demandaram mais tempo e dos projetos mais autuados no período."
+        "description": "Iniciativa para explorar Flutter e otimizar minha produtividade. Cronômetro com tags por categoria e relatórios gráficos que destacam em quais tarefas e projetos o tempo foi investido ao longo do mês."
       },
       "eventManager": {
-        "title": "Event Manager",
-        "description": "Aplicativo voltado para a elaboração de listas de presença em eventos, direcionado aos organizadores. Esse recurso permitia a obtenção da lista de participantes e a verificação, bem como a confirmação de presença, por meio da leitura do QRCode nos crachás dos convidados. Vale ressaltar que o aplicativo operava de forma offline, possibilitando a obtenção das listas no início e o envio para o servidor ao final dos eventos."
+        "title": "Gerenciador de Eventos",
+        "description": "App offline para organizadores de eventos. Gera listas de presença, lê o QRCode dos crachás para confirmar entrada e sincroniza os dados com o servidor ao fim do evento."
       },
       "seedSales": {
         "title": "Venda de Sementes",
-        "description": "O aplicativo tem como objetivo principal fornecer diversos indicadores para aprimorar as atividades de vendas de sementes e produtos correlacionados na empresa. Além disso, oferece um \"dicionário\" completo dos clientes, permitindo que os vendedores registrem informações sobre suas interações, acessem o histórico completo de compras, detalhes das vendas e indicadores relevantes para uma abordagem mais eficaz. Adicionalmente, integra um módulo de atividades com o Google Agenda, possibilitando que as equipes organizem tarefas de maneira eficiente e atribuam responsabilidades entre os membros. Essas funcionalidades visam otimizar o desempenho e a colaboração no processo de vendas."
+        "description": "App de vendas de sementes com indicadores de performance, histórico completo dos clientes (compras, interações, detalhes de venda) e integração com Google Agenda para organizar tarefas entre as equipes."
       },
       "seedSales2": {
-        "title": "Seed Sales",
-        "description": "O aplicativo tem como objetivo principal em oferecer uma extensa variedade de indicadores com o intuito de aprimorar as operações de venda de sementes e produtos correlatos na empresa. Com mais de 20 gráficos, a ferramenta visa auxiliar os vendedores nas decisões estratégicas. Dada a natureza do uso, principalmente em visitas a clientes em fazendas, onde a conectividade nem sempre está disponível, a principal meta do aplicativo é operar de maneira totalmente offline. Os dados, provenientes de um banco de dados, eram tratados e simplificados antes de serem enviados ao aplicativo, evitando que a elevada quantidade de dados afetasse o tempo de carregamento da aplicação.\n\nEm 2022, o aplicativo foi descontinuado, cedendo lugar a uma versão mais recente que apresenta um número menor de gráficos. Contudo, essa nova versão oferece uma usabilidade aprimorada, com indicadores mais objetivos e números mais significativos. A mudança visa eliminar a complexidade na análise por parte dos vendedores, proporcionando dados mais simplificados e acessíveis."
+        "title": "Venda de Sementes",
+        "description": "Primeira geração do app de vendas de sementes, com mais de 20 gráficos e foco em operação 100% offline, essencial para vendedores em fazendas sem conectividade. Os dados eram tratados no backend antes do envio para manter a performance."
       },
       "seedShipping": {
-        "title": "Seed Shipping",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod diam. Curabitur aliquam euismod finibus. Duis quam massa, tristique interdum viverra pulvinar, sodales a neque. Donec malesuada vehicula urna eu imperdiet. Duis eu metus risus. Integer molestie ligula ut velit posuere dignissim. Praesent diam sem, semper ac blandit ut, fermentum vitae risus. Nullam eget sem ut velit venenatis placerat."
+        "title": "Envio de Sementes",
+        "description": "App logístico para controle de carregamento de pallets e big bags. Faz a bipagem dos lotes, lista os locais de embarque e oferece um detalhamento completo de cada remessa, integrado a um ERP sem frente web."
       },
       "activesMonitoring": {
         "title": "Monitoramento de Ativos",
-        "description": "Projeto de curto prazo centrado no monitoramento de ativos. Nesse contexto, os ativos estavam equipados com tags que permitiam o rastreamento. Ao atravessarem a porta designada, as tags acionavam um alarme. Minha contribuição para esse projeto envolveu o desenvolvimento do aplicativo responsável por receber essas informações e notificar a equipe de segurança sobre possíveis furtos de ativos, fornecendo detalhes sobre o ativo em questão e sua localização."
+        "description": "Sistema de monitoramento de ativos com tags rastreáveis. Desenvolvi o app que recebia os eventos de passagem pela porta, notificava a equipe de segurança em caso de furto e exibia detalhes e localização do ativo."
       },
       "medicineTracker": {
         "title": "Rastreabilidade de Medicamentos",
-        "description": "\nMinha primeira experiência profissional envolveu a manutenção de um aplicativo já existente, centrado na rastreabilidade de malotes biológicos. O foco principal era o rastreamento GPS e monitoramento de temperatura dos medicamentos durante o transporte entre clínicas. O aplicativo utilizava a tecnologia Bluetooth para se comunicar com as tags responsáveis pelo monitoramento de temperatura, além de utilizar a localização do celular para obtenção da geolocalização. Todas essas informações eram registradas e alimentavam um site administrativo com um dashboard detalhado sobre as tags."
+        "description": "Minha primeira experiência profissional: manutenção de um app de rastreabilidade de malotes biológicos, com GPS e monitoramento de temperatura via Bluetooth, alimentando um dashboard administrativo detalhado."
       },
       "seriousGames": {
-        "title": "TCC - Serious Games Aprendendo a programar",
-        "description": "\nMeu trabalho de conclusão de curso na faculdade abordou as vantagens dos \"Serious Games\", jogos voltados para o ensino. Desenvolvi um jogo 2D com fases para instruir sobre os elementos iniciais da programação, como comandos, condicionais, funções e loops. Cada sessão oferecia diversas fases, começando com tutoriais guiados para que o jogador compreendesse os conceitos. As fases subsequentes apresentavam desafios, nos quais o usuário utilizava comandos visuais para criar algoritmos executáveis. O jogo, com temática RPG, desafiava o jogador a coletar moedas, abrir o baú do tesouro e enfrentar obstáculos, como otimizar caminhos limitados por comandos e combater monstros. Essa foi minha primeira incursão no universo dos jogos, proporcionando uma experiência extremamente agradável e resultando em um produto final notavelmente interessante."
+        "title": "TCC - Serious Games Aprendendo a Programar",
+        "description": "Meu trabalho de conclusão de curso sobre Serious Games: um jogo 2D com temática RPG que ensina os fundamentos da programação (comandos, condicionais, funções e loops) por meio de fases com desafios visuais, coleta de moedas e combate a monstros."
       },
       "shipping": {
-        "title": "Gerenciador de remessas",
-        "description": "Um projeto voltado para o controle logístico do carregamento de pallets e big bags, este sistema tinha como objetivo realizar a bipagem dos materiais para efetuar um gerenciamento logístico eficaz. O fluxo envolvia a obtenção dos locais de embarque, a listagem dos carregamentos, os lotes associados a cada carregamento, a execução da bipagem dos lotes e, finalmente, a conclusão do carregamento. O usuário contava com um detalhamento completo do carregamento, incluindo todas as informações relevantes, juntamente com os lotes bipados e os remanescentes. O aplicativo era integrado com um ERP, portanto, não incluía nenhuma parte web; foi desenvolvido com o propósito de alimentar e consumir dados do ERP."
+        "title": "Gerenciador de Remessas",
+        "description": "Sistema logístico para controle de carregamento de pallets e big bags, com bipagem de lotes, listagem de locais de embarque e detalhamento completo do carregamento. Integrado a um ERP, sem frente web."
       },
       "marketList": {
         "title": "Lista Supermercado",
-        "description": "Meu primeiro projeto de considerável envergadura, excluindo os desenvolvidos durante a faculdade, foi concebido para me preparar para meu primeiro emprego, e como benefício adicional, foi criado para facilitar compras de supermercado. Trata-se de um aplicativo destinado a funcionar como uma lista de compras, integrado a um módulo de controle de estoque, onde todos os itens adicionados à lista atualizavam automaticamente o estoque de mantimentos. Inicialmente, utilizei um banco de dados SQLite para armazenar os dados localmente no dispositivo; posteriormente, parte do aplicativo foi migrada para o Firebase Realtime Database, visando o armazenamento na nuvem."
+        "description": "Meu primeiro projeto de maior porte, feito para me preparar para o primeiro emprego. Lista de compras integrada a um controle de estoque doméstico, com armazenamento local em SQLite e, posteriormente, sincronização via Firebase Realtime Database."
       }
     }
   }

@@ -12,7 +12,7 @@
     "brazil": "Brazil",
     "internship": "Internship",
     "junior": "Junior",
-    "pleno": "",
+    "pleno": "Mid-level",
     "senior": "Senior",
     "intermediate": "Intermediate",
     "advanced": "Advanced",
@@ -23,7 +23,7 @@
     "course": "Course",
     "computerScience": "Computer Science",
     "formation": "Formation",
-    "close": "Fechar",
+    "close": "Close",
     "firstName": "First Name",
     "lastName": "Last Name",
     "email": "Email",
@@ -93,6 +93,9 @@
   },
   "Projects": {
     "title": "Projects",
+    "subtitle": "A timeline of the projects that shaped my journey, from personal experiments to products in production.",
+    "project": "Project",
+    "projects": "Projects",
     "types": {
       "personal": "Personal",
       "professional": "Corporative"
@@ -100,67 +103,67 @@
     "data": {
       "privatePension": {
         "title": "Private Pension",
-        "description": "Project aimed at private pension management, being responsible for managing private pension plans, clients and investments. Separated into three large modules: Institutional Website, where the user will find advertising information about the plan and the organization; Logged Area, where the user will have access to information about their contracted plan, simulations of other plans and benefits, complete statements, membership requirements and benefit requests, updating registration data; And finally the Administrative website, responsible for managing the content displayed in the Logged Area, with a quarantine area for requirements, system logs, user management, plan management, etc."
+        "description": "Full private pension management platform split into three modules: a public institutional website, a logged area for clients (simulations, statements and benefit requests) and an admin portal to manage plans, users and requirements."
       },
       "portfolio": {
         "title": "Portfolio",
-        "description": "I present my digital portfolio, a concise reflection of my career and skills. A simple website aimed at providing a brief summary about me and my professional experiences and technical knowledge. It's the website you are on right now! A simple website containing 4 sections: \"About\", where you will have a brief summary about me, \"Skills\", a list of most of the technologies I used most, \"Projects\", where you will have a list of all the projects I worked on, containing a brief description about them and the technologies used; \"Contact\" and finally the ways to get in touch with me!"
+        "description": "My digital portfolio, the website you are on right now. A concise summary of my career, skills and projects, organized into About, Skills, Projects and Contact."
       },
       "keychain": {
         "title": "Keychain",
-        "description": "With the purpose of having a first contact with .NET and putting clean architecture concepts into practice, this small project was born. This project has two modules, the first is a password sharer, to prevent passwords from being shared via chats/emails, the system allows the user to generate a temporary link containing the password to be shared, after X views or after a determined date, the password is automatically deleted. The second module is a very simple module, a password vault for password management."
+        "description": "A compact project to explore .NET with clean architecture. Two modules: a password sharer using temporary links that self-destruct after X views or a set date, and a simple personal password vault."
       },
       "stoneEcommerce": {
         "title": "Stone E-commerce",
-        "description": "E-commerce platform specialized in stones, serving the B2B and B2C sectors, accessible both via the web and mobile devices. The project is divided into two modules, with the main one being e-commerce itself. It stands out for offering a unique experience in acquiring stones, with payment options via bank slip, card and Pix, as well as resources such as informative banners, order history and registration of invoices to improve practicality and transparency. The second module comprises an administrative area, allowing the management of delivery dates, users, banners and parameter settings, providing efficient control over various aspects of the system."
+        "description": "B2B and B2C stone e-commerce available on web and mobile. Checkout via bank slip, card and Pix, order history and invoice registry, plus an admin area to manage delivery dates, banners and system parameters."
       },
       "cementEcommerce": {
         "title": "Cement E-commerce",
-        "description": "E-commerce platform specialized in cement, focused exclusively on the B2B audience. The project comprises an application and a website, divided into four large modules. The first stands out as the flagship, consisting of the e-commerce itself, allowing users to make purchases for different CNPJs. In addition, it offers features such as checking product quality information, registering and managing sellers (with the ability to customize functionalities according to the seller), viewing invoices, checking pre-approved credit, among others. The second module is aimed at salespeople, providing access to training. The third module is aimed at the general public, featuring a Webview of a blog, along with exclusive features such as a map of nearby stores and advertising campaigns. Finally, the administrative module manages users, campaigns, incidents and several other settings related to e-commerce and sellers."
+        "description": "B2B cement e-commerce on app and web, split into four modules: multi-CNPJ purchases with pre-approved credit and invoice lookup, training for salespeople, a public blog with a nearby-stores map and campaigns, and a full admin area."
       },
       "financial": {
         "title": "Financial",
-        "description": "Project developed for my own use, with the aim of carrying out my financial management, with control of transactions, investments and assets, and with a series of graphical indicators for analysis. The initial idea for this project was to develop an application, which I started developing focusing on the transaction management part, but the idea ended up being interrupted. However, it was returned and finalized in a WEB version in 2023, which is currently used and I am adding improvements casually according to my needs."
+        "description": "Personal project to manage my own finances, with control of transactions, investments and assets through graphical indicators. Started as an app, revived as a web version in 2023 and still evolving as my needs change."
       },
       "timeTracker": {
         "title": "Time Tracker",
-        "description": "With the aim of exploring Flutter, I undertook a project dedicated to timing the time allocated to professional tasks, aiming to optimize and categorize the elements developed during work. This initiative aims to improve my productivity by providing the ability to time and categorize tasks, with the addition of tags for generating graphical reports. This highlights, in a clear and efficient way, the activities of the month, facilitating the analysis of the tasks that required the most time and the projects most booked during the period."
+        "description": "An initiative to explore Flutter and improve my productivity. A time tracker with tags by category and graphical reports that highlight which tasks and projects consumed the most time each month."
       },
       "eventManager": {
         "title": "Event Manager",
-        "description": "Application aimed at creating attendance lists at events, aimed at organizers. This feature allowed obtaining the list of participants and checking them, as well as confirming presence, by reading the QRCode on the guests' badges. It is worth mentioning that the application operated offline, making it possible to obtain lists at the beginning and send them to the server at the end of the events."
+        "description": "Offline-first app for event organizers. Generates attendance lists, scans QRCodes on guest badges to confirm entry, and syncs data with the server once the event ends."
       },
       "seedSales": {
         "title": "Seed Sales",
-        "description": "The application's main objective is to provide several indicators to improve the sales activities of seeds and related products in the company. Additionally, it offers a complete \"dictionary\" of customers, allowing sellers to record information about their interactions, access complete purchase history, sales details and relevant indicators for a more effective approach. Additionally, it integrates an activities module with Google Calendar, enabling teams to organize tasks efficiently and assign responsibilities among members. These features aim to optimize performance and collaboration in the sales process."
+        "description": "Seed sales app featuring performance indicators, a full customer \"dictionary\" (purchase history, interactions, sale details) and Google Calendar integration to organize tasks across the team."
       },
       "seedSales2": {
         "title": "Seed Sales",
-        "description": "The application's main objective is to offer an extensive variety of indicators with the aim of improving the company's seed and related product sales operations. With more than 20 charts, the tool aims to help sellers make strategic decisions. Given the nature of use, mainly when visiting customers on farms, where connectivity is not always available, the main goal of the application is to operate completely offline. The data, coming from a database, was processed and simplified before being sent to the application, preventing the large amount of data from affecting the application's loading time.\n"
+        "description": "Earlier generation of the seed sales app, with over 20 charts and a fully offline-first design, essential for salespeople visiting farms without connectivity. Data was pre-processed on the backend to keep the app fast."
       },
       "seedShipping": {
         "title": "Seed Shipping",
-        "description": "A project aimed at the logistical control of the loading of pallets and big bags, this system aimed to perform the beeping of materials to carry out effective logistics management. The flow involved obtaining the loading locations, listing the loads, the lots associated with each load, performing the batch copying and, finally, completing the load. The user had a complete breakdown of the shipment, including all relevant information, along with the bleeped and remaining batches. The application was integrated with an ERP, therefore, it did not include any web part; was developed for the purpose of feeding and consuming ERP data."
+        "description": "Logistics app for pallet and big-bag loading control. Scans material batches, lists loading sites and gives a complete breakdown of each shipment, integrated with an ERP without a web front end."
       },
       "activesMonitoring": {
         "title": "Actives Monitoring",
-        "description": "Short-term project focused on asset monitoring. In this context, assets were equipped with tags that allowed tracking. When passing through the designated door, the tags would trigger an alarm. My contribution to this project involved developing the application responsible for receiving this information and notifying the security team about possible asset theft, providing details about the asset in question and its location."
+        "description": "Asset monitoring system powered by trackable tags. I built the app that received door-crossing events, notified the security team in case of theft and displayed the asset's details and location."
       },
       "medicineTracker": {
         "title": "Medicine Tracker",
-        "description": "My first professional experience involved maintaining an existing application, focused on the traceability of biological bags. The main focus was GPS tracking and temperature monitoring of medications during transport between clinics. The application uses Bluetooth technology to communicate with the tags responsible for temperature monitoring, in addition to using the cell phone's location to obtain geolocation. All this information was recorded and fed into an administrative website with a detailed dashboard about the tags."
+        "description": "My first professional experience: maintaining an existing app for biological bag traceability, with GPS tracking and temperature monitoring over Bluetooth, feeding a detailed admin dashboard."
       },
       "seriousGames": {
-        "title": "TCC - Serious Games Aprendendo a programar",
-        "description": "My course completion work at university addressed the advantages of \"Serious Games\", games aimed at teaching. I developed a 2D game with phases to teach about the initial elements of programming, such as commands, conditionals, functions and loops. Each session offered several phases, starting with guided tutorials to help the player understand the concepts. The subsequent phases presented challenges, in which the user used visual commands to create executable algorithms. The game, with an RPG theme, challenged the player to collect coins, open the treasure chest and face obstacles, such as optimizing paths limited by commands and fighting monsters. This was my first foray into the world of gaming, providing an extremely pleasant experience and resulting in a remarkably interesting final product."
+        "title": "Thesis - Serious Games Learning to Code",
+        "description": "My college thesis on Serious Games: a 2D RPG-style game that teaches programming fundamentals (commands, conditionals, functions and loops) through visual challenges, coin collecting and monster fights."
       },
       "shipping": {
         "title": "Shipping Manager",
-        "description": "A project aimed at the logistical control of the loading of pallets and big bags, this system aimed to perform the beeping of materials to carry out effective logistics management. The flow involved obtaining the loading locations, listing the loads, the lots associated with each load, performing the batch copying and, finally, completing the load. The user had a complete breakdown of the shipment, including all relevant information, along with the bleeped and remaining batches. The application was integrated with an ERP, therefore, it did not include any web part; was developed for the purpose of feeding and consuming ERP data."
+        "description": "Logistics app for pallet and big-bag loading control. Scans material batches, lists loading sites and gives a complete breakdown of each shipment. Integrated with an ERP, with no web front end."
       },
       "marketList": {
         "title": "Market List",
-        "description": "My first major project, excluding those developed during university, was designed to prepare me for my first job, and as an added benefit, it was created to make grocery shopping easier. It is an application designed to function as a shopping list, integrated with a stock control module, where all items added to the list automatically update the grocery stock. Initially, I used an SQLite database to store the data locally on the device; later, part of the application was migrated to the Firebase Realtime Database, aiming for cloud storage."
+        "description": "My first larger project, built to prepare for my first job. A grocery list tied to a home inventory module, with local storage on SQLite and later cloud sync via Firebase Realtime Database."
       }
     }
   }
