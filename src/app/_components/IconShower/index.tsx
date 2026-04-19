@@ -23,9 +23,9 @@ interface FallingIcon {
 }
 
 const LAYERS = [
-    {sizeRange: [16, 22], opacityRange: [0.10, 0.20], blurRange: [1.5, 2.5], durationRange: [16, 24]},
-    {sizeRange: [26, 36], opacityRange: [0.18, 0.32], blurRange: [0.4, 1.0], durationRange: [12, 18]},
-    {sizeRange: [40, 56], opacityRange: [0.30, 0.50], blurRange: [0, 0.3], durationRange: [9, 14]},
+    {sizeRange: [16, 22], opacityRange: [0.18, 0.28], blurRange: [1.2, 2.0], durationRange: [16, 24]},
+    {sizeRange: [26, 36], opacityRange: [0.28, 0.42], blurRange: [0.3, 0.8], durationRange: [12, 18]},
+    {sizeRange: [40, 56], opacityRange: [0.42, 0.62], blurRange: [0, 0.2], durationRange: [9, 14]},
 ] as const;
 
 const rand = (min: number, max: number) => Math.random() * (max - min) + min;
@@ -76,7 +76,6 @@ function IconShower({items, count = 60}: IIconShowerProps) {
                         filter: it.blur ? `blur(${it.blur}px)` : undefined,
                         animationDuration: `${it.duration}s`,
                         animationDelay: `${it.delay}s`,
-                        // CSS custom props consumed by the keyframes
                         ['--rot-from' as any]: `${it.rotateFrom}deg`,
                         ['--rot-to' as any]: `${it.rotateTo}deg`,
                         ['--drift' as any]: `${it.drift}px`,

@@ -1,38 +1,31 @@
 'use client';
-import React, {useEffect, useState} from 'react';
+import React from 'react';
+import {useMousePosition} from '@/hooks/useMousePosition';
+
+const SIZE = 520;
 
 function FlashLight() {
-    const [position, setPosition] = useState({ top: 0, left: 0 });
+    const pos = useMousePosition();
 
-    const handleMouseMove = (e: MouseEvent) => {
-        console.log("Mouse moving")
-        setPosition({
-            top: e.pageY + -80,
-            left: e.pageX + -80,
-        });
-    };
-
-    useEffect(() => {
-        document.addEventListener('mousemove', handleMouseMove);
-
-        return () => {
-            document.removeEventListener('mousemove', handleMouseMove);
-        };
-    }, []);
-
+    if (!pos) return null;
 
     return (
-        <div>
-
-            <div
-                id="light3"
-                className={"w-120 h-120 bg-gradient-radial   fixed rounded-full pointer-events-none"}
-                style={{ top: `${position.top - 160}px`, left: `${position.left - 160}px` }}
-            />
-
-        </div>
+        <div
+            aria-hidden
+            className="pointer-events-none fixed z-20 rounded-full"
+            style={{
+                width: SIZE,
+                height: SIZE,
+                top: pos.y - SIZE / 2,
+                left: pos.x - SIZE / 2,
+                background:
+                    'radial-gradient(circle, rgba(255, 200, 44, 0.10) 0%, rgba(255, 73, 219, 0.06) 35%, rgba(189, 147, 249, 0.03) 60%, transparent 75%)',
+                mixBlendMode: 'screen',
+                filter: 'blur(2px)',
+                transition: 'transform 60ms linear',
+            }}
+        />
     );
-
 }
 
 export default FlashLight;

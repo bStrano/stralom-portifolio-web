@@ -1,6 +1,7 @@
 import React from 'react';
-import FlashLight from "../FlashLight";
+import Aurora from "../Aurora";
 import IconShower from "../IconShower";
+import MagneticText from "../MagneticText";
 import {useTranslations} from "next-intl";
 
 const SHOWER_ICONS = [
@@ -28,20 +29,18 @@ function HomeIntroduction(props: IHomeIntroductionProps) {
 
     return (
         <section className={'relative overflow-hidden p-10 flex h-[calc(100vh-80px)] justify-center items-center'}>
+            <Aurora/>
             <IconShower items={SHOWER_ICONS}/>
-            <FlashLight />
             <article className={'relative z-10'}>
                 <div>
                     <div>
                         <p className={'select-none text-xl text-blue-dark-11 bg-text-gradient'}>{t('welcome')}</p>
                         <h1>
                             <div>
-                                {
-                                    'Bruno Lombardi Strano'.split('').map((char, index) => (
-                                        <span key={index} className={'select-none text-[6vw] font-bold text-blue-dark-11 inline-block hover:animate-wiggle whitespace-break-spaces hover:bg-text-gradient'}>
-                                      {char}
-                                    </span>
-                                    ))}
+                                <MagneticText
+                                    text={'Bruno Lombardi Strano'}
+                                    letterClassName={'select-none text-[6vw] font-bold text-blue-dark-11 hover:bg-text-gradient'}
+                                />
                             </div>
                         </h1>
                         <p className={'select-none text-xl text-blue-dark-11 bg-text-gradient'}>{t('description')}</p>
