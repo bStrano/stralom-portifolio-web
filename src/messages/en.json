@@ -73,6 +73,7 @@
     }
   },
   "Header": {
+    "logoSuffix": "portfolio",
     "home": "Home",
     "about": "About",
     "skills": "Skills",

@@ -34,6 +34,7 @@
     "present": "Presente"
   },
   "Header": {
+    "logoSuffix": "portfólio",
     "home": "Inicio",
     "about": "Sobre",
     "skills": "Habilidades",

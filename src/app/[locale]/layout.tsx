@@ -1,11 +1,16 @@
 import '../globals.css'
 import type {Metadata} from 'next'
-import {Montserrat} from 'next/font/google'
+import {Montserrat, Lora} from 'next/font/google'
 import React from "react";
 import Header from "@/app/_components/Header";
 import {twMerge} from "tailwind-merge";
 
 const inter = Montserrat({subsets: ['latin']})
+const lora = Lora({
+    variable: '--font-lora',
+    subsets: ['latin'],
+    style: ['normal', 'italic'],
+})
 
 export const metadata: Metadata = {
     title: 'Stralom Portifolio',
@@ -31,7 +36,7 @@ export default function RootLayout({
     params: { locale: string }
 }) {
     return (
-        <html lang="en" className={'z-20'}>
+        <html lang="en" className={`${lora.variable} z-20`}>
         {
             process.env.NODE_ENV === 'production' && (
                 <Script id="ms-clarity" strategy="afterInteractive">

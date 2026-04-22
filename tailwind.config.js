@@ -64,7 +64,7 @@ module.exports = {
             },
             fontFamily: {
                 sans: ['Graphik', 'sans-serif'],
-                serif: ['Merriweather', 'serif'],
+                serif: ['var(--font-lora)', 'Merriweather', 'serif'],
             },
             keyframes: {
                 wiggle: {
