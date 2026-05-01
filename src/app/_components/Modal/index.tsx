@@ -1,5 +1,6 @@
 'use client'
 import React from "react";
+import {createPortal} from "react-dom";
 
 export interface ModalProps {
     isVisible: boolean;
@@ -9,8 +10,12 @@ export interface ModalProps {
 }
 
 export function Modal({ isVisible = false, setVisibility, children }: ModalProps) {
-    if(!isVisible) return (<></>);
-    return (
+    const [mounted, setMounted] = React.useState(false);
+    React.useEffect(() => setMounted(true), []);
+
+    if (!isVisible || !mounted) return null;
+
+    return createPortal(
         <div id="modal"
              onClick={(e) => {
                  e.preventDefault();
@@ -20,6 +25,7 @@ export function Modal({ isVisible = false, setVisibility, children }: ModalProps
             <div className="relative p-4 w-full max-w-2xl max-h-full" onClick={() => {}}>
                 {children}
             </div>
-        </div>
-    )
+        </div>,
+        document.body,
+    );
 }
