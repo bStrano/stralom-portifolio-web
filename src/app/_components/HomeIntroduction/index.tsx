@@ -45,7 +45,7 @@ function HomeIntroduction(props: IHomeIntroductionProps) {
                                     text={'Bruno Lombardi Strano'}
                                     radius={420}
                                     strength={0.3}
-                                    letterClassName={'select-none text-[clamp(2rem,8vw,5rem)] font-bold text-blue-dark-11 hover:bg-gradient-to-r hover:from-mPink hover:to-mYellow hover:bg-clip-text hover:text-transparent'}
+                                    letterClassName={'select-none text-[clamp(2rem,8vw,5rem)] font-bold text-blue-dark-11 hover:bg-gradient-to-r hover:from-purple-400 hover:to-violet-700 hover:bg-clip-text hover:text-transparent'}
                                 />
                             </div>
                         </h1>
