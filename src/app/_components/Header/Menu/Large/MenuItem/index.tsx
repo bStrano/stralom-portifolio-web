@@ -32,10 +32,10 @@ function MenuItem({label, path}: IMenuItemProps) {
             href={path}
             className={twMerge(
                 "relative flex items-center flex-shrink-0 mr-6 transition-colors duration-200",
-                "after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-left after:bg-gradient-to-r after:from-mPink after:to-mYellow after:transition-transform after:duration-300",
+                "after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-left after:bg-gradient-to-r after:from-dracula-pink after:to-dracula-purple after:transition-transform after:duration-300",
                 isActive
-                    ? "text-mYellow after:scale-x-100"
-                    : "text-white hover:text-mYellow after:scale-x-0 hover:after:scale-x-100"
+                    ? "text-dracula-purple after:scale-x-100"
+                    : "text-white hover:text-dracula-purple after:scale-x-0 hover:after:scale-x-100"
             )}
         >
             {label}

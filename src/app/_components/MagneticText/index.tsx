@@ -86,44 +86,44 @@ function MagneticText({text, radius = 140, strength = 0.35, letterClassName, ent
     const words = text.split(' ');
     let charIndex = 0;
 
+    const renderLetter = (char: string) => {
+        const i = charIndex++;
+        return (
+            <span
+                key={i}
+                ref={(el) => {
+                    spansRef.current[i] = el;
+                }}
+                style={{
+                    display: 'inline-block',
+                    transition: 'transform 350ms cubic-bezier(0.22, 1, 0.36, 1)',
+                    willChange: 'transform',
+                }}
+            >
+                <span
+                    className={`magnetic-letter-inner ${letterClassName ?? ''}`}
+                    style={{
+                        display: 'inline-block',
+                        whiteSpace: 'pre',
+                        animationDelay: `${enterDelay + i * enterStagger}ms`,
+                    }}
+                >
+                    {char}
+                </span>
+            </span>
+        );
+    };
+
     return (
         <>
-            {words.map((word, wi) => {
-                const letters = word.split('').map((char) => {
-                    const i = charIndex++;
-                    return (
-                        <span
-                            key={i}
-                            ref={(el) => {
-                                spansRef.current[i] = el;
-                            }}
-                            style={{
-                                display: 'inline-block',
-                                transition: 'transform 350ms cubic-bezier(0.22, 1, 0.36, 1)',
-                                willChange: 'transform',
-                            }}
-                        >
-                            <span
-                                className={`magnetic-letter-inner ${letterClassName ?? ''}`}
-                                style={{
-                                    display: 'inline-block',
-                                    animationDelay: `${enterDelay + i * enterStagger}ms`,
-                                }}
-                            >
-                                {char}
-                            </span>
-                        </span>
-                    );
-                });
-                return (
-                    <React.Fragment key={`w${wi}`}>
-                        <span style={{display: 'inline-block', whiteSpace: 'nowrap'}}>
-                            {letters}
-                        </span>
-                        {wi < words.length - 1 ? ' ' : null}
-                    </React.Fragment>
-                );
-            })}
+            {words.map((word, wi) => (
+                <React.Fragment key={`w${wi}`}>
+                    <span style={{display: 'inline-block', whiteSpace: 'nowrap'}}>
+                        {word.split('').map((char) => renderLetter(char))}
+                    </span>
+                    {wi < words.length - 1 ? renderLetter(' ') : null}
+                </React.Fragment>
+            ))}
 
             <style jsx>{`
                 .magnetic-letter-inner {
