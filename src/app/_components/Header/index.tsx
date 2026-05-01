@@ -22,7 +22,7 @@ function Header(props: IHeaderProps) {
                 <LargeMenu/>
             </div>
 
-            <div className={'md:hidden sm:block'}>
+            <div className={'md:hidden sm:block flex-1'}>
                 <SmallMenu/>
             </div>
         </nav>

@@ -52,12 +52,21 @@ function buildIcons(items: string[], count: number): FallingIcon[] {
 
 function IconShower({items, count = 60}: IIconShowerProps) {
     const [mounted, setMounted] = useState(false);
+    const [effectiveCount, setEffectiveCount] = useState(count);
 
     useEffect(() => {
         setMounted(true);
-    }, []);
+        const update = () => {
+            const w = window.innerWidth;
+            const next = w < 640 ? Math.round(count * 0.4) : w < 1024 ? Math.round(count * 0.7) : count;
+            setEffectiveCount(next);
+        };
+        update();
+        window.addEventListener('resize', update);
+        return () => window.removeEventListener('resize', update);
+    }, [count]);
 
-    const icons = useMemo(() => (mounted ? buildIcons(items, count) : []), [mounted, items, count]);
+    const icons = useMemo(() => (mounted ? buildIcons(items, effectiveCount) : []), [mounted, items, effectiveCount]);
 
     if (!mounted) return null;
 

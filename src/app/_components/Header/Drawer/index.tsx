@@ -13,7 +13,7 @@ function Drawer(props: IDrawerProps) {
 
     return (
         <menu className={'bg-black  w-full divide-y-0.5 h-full fixed inset-0 overflow-y-auto'}>
-            <div className={'flex-1 flex flex-row px-10 py-10 justify-between'}>
+            <div className={'flex-1 flex flex-row px-5 py-5 justify-between'}>
                 <button data-modal-targe='menu' data-modal-hide="menu" type="button">
                     <Icon icon={'mingcute:menu-fill'}/>
                 </button>
