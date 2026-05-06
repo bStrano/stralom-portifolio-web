@@ -3,6 +3,10 @@
     "welcome": "Olá! Meu nome é",
     "description": "Desenvolvedor full stack com {years}+ anos construindo aplicações Web, Mobile e APIs. De frontend a backend, qualquer desafio de tecnologia."
   },
+  "NotFound": {
+    "message": "Essa página se perdeu pelo caminho. Vamos te levar de volta.",
+    "back": "Voltar para o início"
+  },
   "Words": {
     "years": "ano(s)",
     "months": "meses",
@@ -54,6 +58,15 @@
     "title": "Formas de Contato",
     "subtitle": "Tem um projeto em mente ou quer apenas trocar uma ideia? Escolha o canal que preferir ou me envie uma mensagem direto por aqui."
   },
+  "MailForm": {
+    "successMessage": "Mensagem enviada com sucesso!",
+    "errorMessage": "Não foi possível enviar. Tente novamente em instantes.",
+    "rateLimitMessage": "Muitas tentativas. Aguarde alguns minutos antes de tentar de novo.",
+    "invalidEmail": "Email inválido",
+    "invalidPhone": "Telefone inválido",
+    "charactersUsed": "{count}/{max} caracteres",
+    "sent": "Enviado!"
+  },
   "About": {
     "title": "Sobre mim",
     "Labels": {
@@ -102,7 +115,12 @@
       "personal": "Pessoal",
       "professional": "Corporativo"
     },
+    "visitSite": "Visitar site",
     "data": {
+      "cookbook": {
+        "title": "Livro de Receitas",
+        "description": "App de livro de receitas para guardar, explorar e refinar pratos através de um assistente conversacional de IA. Gera novas receitas a partir de um prompt, ajusta as existentes e busca por categoria, tempo de preparo ou dificuldade."
+      },
       "privatePension": {
         "title": "Previdência Privada",
         "description": "Plataforma completa de gestão de previdência privada, dividida em três módulos: site institucional, área logada para clientes (com simulações, extratos e solicitações de benefícios) e portal administrativo para gestão de planos, usuários e requerimentos."

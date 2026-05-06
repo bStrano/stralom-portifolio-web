@@ -75,10 +75,16 @@ module.exports = {
                     '100%': { transform: 'translateY(calc(100vh))' },
                         delay: '1s',
                 },
+                scaleIn: {
+                    '0%': { transform: 'scale(0)', opacity: '0' },
+                    '70%': { transform: 'scale(1.2)', opacity: '1' },
+                    '100%': { transform: 'scale(1)', opacity: '1' },
+                },
             },
             animation: {
                 wiggle: 'wiggle 1s ease-in-out infinite ',
                 up: 'up 10s ease-in infinite',
+                'scale-in': 'scaleIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1)',
             },
             extend: {
                 spacing: {

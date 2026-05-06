@@ -14,65 +14,131 @@ export interface MailFormProps {
         description: string;
         submit: string;
         sending: string;
+        sent: string;
+        successMessage: string;
+        errorMessage: string;
+        rateLimitMessage: string;
+        invalidEmail: string;
+        invalidPhone: string;
+        charactersUsedTemplate: string;
     }
 }
 
-const inputClass =
-    "block w-full rounded-xl px-4 py-3 text-sm text-white placeholder-blue-dark-11 bg-white/[0.03] border border-white/[0.08] transition-[border-color,box-shadow,background-color] duration-200 ease-out focus:outline-none focus:bg-white/[0.05] focus:border-dracula-purple/60 focus:shadow-[0_0_0_3px_rgba(189,147,249,0.18)]";
+const DESCRIPTION_MAX = 2000
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+const inputBaseClass =
+    "block w-full rounded-xl px-4 py-3 text-sm text-white placeholder-blue-dark-11 bg-white/[0.03] border transition-[border-color,box-shadow,background-color] duration-200 ease-out focus:outline-none focus:bg-white/[0.05] disabled:opacity-60 disabled:cursor-not-allowed"
+
+const inputValidClass =
+    "border-white/[0.08] focus:border-dracula-purple/60 focus:shadow-[0_0_0_3px_rgba(189,147,249,0.18)]"
+
+const inputInvalidClass =
+    "border-red-500/60 focus:border-red-500/80 focus:shadow-[0_0_0_3px_rgba(239,68,68,0.18)]"
 
 const labelClass =
-    "block mb-1.5 text-[11px] font-medium tracking-[0.18em] uppercase text-blue-dark-11";
+    "block mb-1.5 text-[11px] font-medium tracking-[0.18em] uppercase text-blue-dark-11"
+
+const errorTextClass =
+    "mt-1.5 text-xs text-red-400"
+
+function maskPhoneBR(value: string): string {
+    const digits = value.replace(/\D/g, '').slice(0, 11)
+    if (digits.length === 0) return ''
+    if (digits.length <= 2) return `(${digits}`
+    if (digits.length <= 6) return `(${digits.slice(0, 2)}) ${digits.slice(2)}`
+    if (digits.length <= 10) return `(${digits.slice(0, 2)}) ${digits.slice(2, 6)}-${digits.slice(6)}`
+    return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`
+}
+
+function isPhoneValid(masked: string): boolean {
+    const digits = masked.replace(/\D/g, '')
+    return digits.length === 10 || digits.length === 11
+}
+
+type Status = 'idle' | 'loading' | 'success' | 'error'
 
 export default function MailForm(props: MailFormProps) {
+    const [status, setStatus] = useState<Status>('idle')
     const [successToast, setSuccessToast] = useState(false)
-    const [loading, setLoading] = useState(false)
+    const [errorToast, setErrorToast] = useState<string | null>(null)
+    const [touched, setTouched] = useState({email: false, phone: false})
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
         phone: "",
         email: "",
         description: "",
+        website: "",
     });
 
-    async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
-        setLoading(true)
-        e.preventDefault();
-        const response = await fetch('https://maz35av5ic.execute-api.us-east-2.amazonaws.com/PRODUCTION/email', {
-            method: 'POST',
-            body: JSON.stringify({
-                destination: 'bruno@stralom.com',
-                subject: 'Contato pelo site',
-                message: ` {
-                    <h1>Contato pelo site</h1>
-                    <p>Nome: ${formData.firstName} ${formData.lastName}</p>
-                    <p>Telefone: ${formData.phone}</p>
-                    <p>Email: ${formData.email}</p>
-                    <p>Descrição: ${formData.description}</p>
-                `
-            }),
-        })
+    const loading = status === 'loading'
+    const showSuccess = status === 'success'
 
-        const data = await response.json()
-        if (data.MessageId) {
-            setFormData({
-                firstName: "",
-                lastName: "",
-                phone: "",
-                email: "",
-                description: "",
-            })
-            setSuccessToast(true);
+    const emailInvalid = touched.email && formData.email.length > 0 && !EMAIL_RE.test(formData.email)
+    const phoneInvalid = touched.phone && formData.phone.length > 0 && !isPhoneValid(formData.phone)
+    const descriptionLength = formData.description.length
+    const descriptionExceeded = descriptionLength > DESCRIPTION_MAX
+
+    async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+        e.preventDefault();
+        if (loading) return
+
+        setTouched({email: true, phone: true})
+        if (!EMAIL_RE.test(formData.email) || !isPhoneValid(formData.phone) || descriptionExceeded) {
+            return
         }
-        setLoading(false)
+
+        setStatus('loading')
+        setErrorToast(null)
+
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(formData),
+            })
+
+            const data = await response.json().catch(() => ({}))
+
+            if (response.ok && data.MessageId) {
+                setFormData({
+                    firstName: "",
+                    lastName: "",
+                    phone: "",
+                    email: "",
+                    description: "",
+                    website: "",
+                })
+                setTouched({email: false, phone: false})
+                setStatus('success')
+                setSuccessToast(true)
+                setTimeout(() => setStatus('idle'), 1800)
+                return
+            }
+
+            setStatus('error')
+            setErrorToast(response.status === 429 ? props.labels.rateLimitMessage : props.labels.errorMessage)
+        } catch {
+            setStatus('error')
+            setErrorToast(props.labels.errorMessage)
+        }
     }
 
     const handleInput = (e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLTextAreaElement>) => {
         const fieldName = e.target.getAttribute('id') as string;
-        const fieldValue = e.target.value;
+        let fieldValue = e.target.value;
+        if (fieldName === 'phone') {
+            fieldValue = maskPhoneBR(fieldValue)
+        }
         setFormData((prevState) => ({
             ...prevState,
             [fieldName]: fieldValue
         }));
+    }
+
+    const handleBlur = (field: 'email' | 'phone') => () => {
+        setTouched(prev => ({...prev, [field]: true}))
     }
 
     return (
@@ -89,8 +155,25 @@ export default function MailForm(props: MailFormProps) {
                 <Iconify icon="lucide:mail" className="ml-auto text-dracula-purple" width={20} height={20}/>
             </div>
 
-            <form onSubmit={onSubmit} className="flex flex-col p-5 md:p-7 gap-5">
-                <Toast title={'Mensagem enviada com sucesso!'} type={'success'} visible={successToast}/>
+            <form onSubmit={onSubmit} className="flex flex-col p-5 md:p-7 gap-5" noValidate>
+                <Toast title={props.labels.successMessage} type={'success'} visible={successToast}/>
+                {errorToast && <Toast title={errorToast} type={'danger'} visible={true}/>}
+
+                <div
+                    aria-hidden="true"
+                    className="absolute opacity-0 pointer-events-none -left-[9999px] -top-[9999px]"
+                >
+                    <label htmlFor="website">Website</label>
+                    <input
+                        type="text"
+                        id="website"
+                        name="website"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        value={formData.website}
+                        onChange={handleInput}
+                    />
+                </div>
 
                 <div className="grid gap-5 md:grid-cols-2">
                     <div>
@@ -101,7 +184,8 @@ export default function MailForm(props: MailFormProps) {
                             name="firstName"
                             value={formData.firstName}
                             onChange={handleInput}
-                            className={inputClass}
+                            disabled={loading}
+                            className={`${inputBaseClass} ${inputValidClass}`}
                             required
                         />
                     </div>
@@ -112,7 +196,8 @@ export default function MailForm(props: MailFormProps) {
                             id="lastName"
                             onChange={handleInput}
                             value={formData.lastName}
-                            className={inputClass}
+                            disabled={loading}
+                            className={`${inputBaseClass} ${inputValidClass}`}
                             required
                         />
                     </div>
@@ -124,22 +209,34 @@ export default function MailForm(props: MailFormProps) {
                         <input
                             type="tel"
                             id="phone"
+                            inputMode="tel"
+                            placeholder="(11) 91234-5678"
                             onChange={handleInput}
+                            onBlur={handleBlur('phone')}
                             value={formData.phone}
-                            className={inputClass}
+                            disabled={loading}
+                            aria-invalid={phoneInvalid}
+                            className={`${inputBaseClass} ${phoneInvalid ? inputInvalidClass : inputValidClass}`}
                             required
                         />
+                        {phoneInvalid && <p className={errorTextClass}>{props.labels.invalidPhone}</p>}
                     </div>
                     <div>
                         <label htmlFor="email" className={labelClass}>{props.labels.email}</label>
                         <input
                             type="email"
                             id="email"
+                            inputMode="email"
+                            autoComplete="email"
                             onChange={handleInput}
+                            onBlur={handleBlur('email')}
                             value={formData.email}
-                            className={inputClass}
+                            disabled={loading}
+                            aria-invalid={emailInvalid}
+                            className={`${inputBaseClass} ${emailInvalid ? inputInvalidClass : inputValidClass}`}
                             required
                         />
+                        {emailInvalid && <p className={errorTextClass}>{props.labels.invalidEmail}</p>}
                     </div>
                 </div>
 
@@ -150,15 +247,30 @@ export default function MailForm(props: MailFormProps) {
                         onChange={handleInput}
                         value={formData.description}
                         rows={6}
-                        className={`${inputClass} resize-none min-h-[160px]`}
+                        maxLength={DESCRIPTION_MAX}
+                        disabled={loading}
+                        aria-invalid={descriptionExceeded}
+                        className={`${inputBaseClass} ${descriptionExceeded ? inputInvalidClass : inputValidClass} resize-none min-h-[160px]`}
                         required
                     />
+                    <div className="mt-1.5 flex justify-end">
+                        <span className={`text-xs tabular-nums ${descriptionLength > DESCRIPTION_MAX * 0.9 ? 'text-yellow-400' : 'text-blue-dark-11'}`}>
+                            {props.labels.charactersUsedTemplate
+                                .replace('{count}', String(descriptionLength))
+                                .replace('{max}', String(DESCRIPTION_MAX))}
+                        </span>
+                    </div>
                 </div>
 
                 <button
                     type="submit"
-                    disabled={loading}
-                    className="group relative mt-2 inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-medium text-white overflow-hidden bg-gradient-to-r from-dracula-purple to-dracula-pink shadow-[0_8px_24px_-8px_rgba(189,147,249,0.55)] transition-[transform,box-shadow,filter] duration-300 ease-out hover:-translate-y-0.5 hover:shadow-[0_14px_32px_-10px_rgba(255,121,198,0.55)] disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0"
+                    disabled={loading || showSuccess}
+                    aria-busy={loading}
+                    className={`group relative mt-2 inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-medium text-white overflow-hidden shadow-[0_8px_24px_-8px_rgba(189,147,249,0.55)] transition-[transform,box-shadow,filter,background] duration-300 ease-out hover:-translate-y-0.5 hover:shadow-[0_14px_32px_-10px_rgba(255,121,198,0.55)] disabled:cursor-not-allowed disabled:hover:translate-y-0 ${
+                        showSuccess
+                            ? 'bg-gradient-to-r from-emerald-500 to-emerald-400'
+                            : 'bg-gradient-to-r from-dracula-purple to-dracula-pink disabled:opacity-70'
+                    }`}
                 >
                     <span
                         aria-hidden
@@ -181,6 +293,13 @@ export default function MailForm(props: MailFormProps) {
                                 fill="currentFill"
                             />
                         </svg>
+                    ) : showSuccess ? (
+                        <Icon
+                            icon="lucide:check"
+                            width={18}
+                            height={18}
+                            className="animate-scale-in"
+                        />
                     ) : (
                         <Icon
                             icon="lucide:send-horizontal"
@@ -189,7 +308,13 @@ export default function MailForm(props: MailFormProps) {
                             className="transition-transform duration-300 group-hover:translate-x-0.5"
                         />
                     )}
-                    <span>{loading ? props.labels.sending + '...' : props.labels.submit}</span>
+                    <span>
+                        {loading
+                            ? props.labels.sending + '...'
+                            : showSuccess
+                                ? props.labels.sent
+                                : props.labels.submit}
+                    </span>
                 </button>
             </form>
         </div>

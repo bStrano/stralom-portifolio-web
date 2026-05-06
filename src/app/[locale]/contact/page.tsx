@@ -38,6 +38,7 @@ const CONTACT_CHANNELS = [
 export default function ContactPage() {
     const t = useTranslations('Words');
     const contact = useTranslations('Contact');
+    const mail = useTranslations('MailForm');
 
     return (
         <Section title={contact('title')}>
@@ -69,6 +70,13 @@ export default function ContactPage() {
                         description: t('description'),
                         submit: t('submit'),
                         sending: t('sending'),
+                        sent: mail('sent'),
+                        successMessage: mail('successMessage'),
+                        errorMessage: mail('errorMessage'),
+                        rateLimitMessage: mail('rateLimitMessage'),
+                        invalidEmail: mail('invalidEmail'),
+                        invalidPhone: mail('invalidPhone'),
+                        charactersUsedTemplate: mail.raw('charactersUsed'),
                     }}/>
                 </div>
             </div>

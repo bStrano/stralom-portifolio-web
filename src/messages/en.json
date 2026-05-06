@@ -3,6 +3,10 @@
     "welcome": "Hello! My name is",
     "description": "Full stack developer with {years}+ years building Web, Mobile apps and APIs. From frontend to backend, any tech challenge."
   },
+  "NotFound": {
+    "message": "This page wandered off. Let's get you back on track.",
+    "back": "Back to home"
+  },
   "Words": {
     "years": "years",
     "months": "months",
@@ -93,6 +97,15 @@
     "title": "Contact forms",
     "subtitle": "Got a project in mind or just want to say hi? Pick the channel you prefer or drop me a message right here."
   },
+  "MailForm": {
+    "successMessage": "Message sent successfully!",
+    "errorMessage": "Could not send the message. Please try again shortly.",
+    "rateLimitMessage": "Too many attempts. Please wait a few minutes before trying again.",
+    "invalidEmail": "Invalid email",
+    "invalidPhone": "Invalid phone number",
+    "charactersUsed": "{count}/{max} characters",
+    "sent": "Sent!"
+  },
   "Projects": {
     "title": "Projects",
     "subtitle": "A timeline of the projects that shaped my journey, from personal experiments to products in production.",
@@ -102,7 +115,12 @@
       "personal": "Personal",
       "professional": "Corporative"
     },
+    "visitSite": "Visit site",
     "data": {
+      "cookbook": {
+        "title": "Cookbook",
+        "description": "Personal cookbook app to keep, browse and refine recipes through a conversational AI assistant. Generate new dishes from a prompt, tweak existing ones, and search by category, prep time or difficulty."
+      },
       "privatePension": {
         "title": "Private Pension",
         "description": "Full private pension management platform split into three modules: a public institutional website, a logged area for clients (simulations, statements and benefit requests) and an admin portal to manage plans, users and requirements."
