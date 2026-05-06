@@ -17,7 +17,7 @@ const ACCENTS: Record<ProjectTypeEnum, string> = {
 
 export const ProjectCard = (props: IProjectCardProps) => {
     const t = useTranslations('Projects');
-    const {title, description, image, skills, year, type, index = 0} = props;
+    const {title, description, image, skills, year, type, url, index = 0} = props;
 
     const accent = ACCENTS[type];
 
@@ -70,6 +70,32 @@ export const ProjectCard = (props: IProjectCardProps) => {
                             className="w-1.5 h-1.5 rounded-full bg-[color:rgb(var(--accent))] shadow-[0_0_8px_rgba(var(--accent),0.9)]"/>
                         {typeLabel}
                     </span>
+                    {url && (
+                        <a
+                            href={url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={t('visitSite')}
+                            className="ml-auto inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-medium bg-white/[0.04] text-white/70 border border-white/10 hover:bg-white/[0.08] hover:text-white hover:border-white/20 transition-colors"
+                        >
+                            {t('visitSite')}
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="12"
+                                height="12"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                        </a>
+                    )}
                 </div>
                 <p className="mt-3 text-blue-dark-11 leading-relaxed text-sm md:text-[0.95rem]">
                     {description}

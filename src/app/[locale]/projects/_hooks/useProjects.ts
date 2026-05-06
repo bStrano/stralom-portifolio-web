@@ -10,6 +10,15 @@ export function useProjects() {
     const projects: ProjectInterface[] = useMemo(() => {
         return [
             {
+                type: ProjectTypeEnum.PERSONAL,
+                title: t('cookbook.title'),
+                description: t('cookbook.description'),
+                year: 2026,
+                image: 'https://stralom-portifolio.s3.us-east-2.amazonaws.com/public/projects/cookbook.png',
+                skills: [SkillsEnums.TYPESCRIPT, SkillsEnums.REACT, SkillsEnums.NEXT, SkillsEnums.TAILWIND, SkillsEnums.NODE, SkillsEnums.NEST, SkillsEnums.TYPEORM, SkillsEnums.POSTGRES, SkillsEnums.BEDROCK, SkillsEnums.S3, SkillsEnums.EC2, SkillsEnums.DOCKER, SkillsEnums.GIT],
+                url: 'https://cookbook.stralom.com/',
+            },
+            {
                 type: ProjectTypeEnum.CORPORATE,
                 title: t('privatePension.title'),
                 description: t('privatePension.description'),
@@ -24,6 +33,7 @@ export function useProjects() {
                 year: 2023,
                 image: 'https://stralom-portifolio.s3.us-east-2.amazonaws.com/public/projects/portifolio.jpg',
                 skills: [SkillsEnums.TYPESCRIPT, SkillsEnums.REACT, SkillsEnums.NEXT, SkillsEnums.TAILWIND, SkillsEnums.VERCEL, SkillsEnums.DOCKER, SkillsEnums.GIT],
+                url: 'https://bruno.stralom.com/',
             },
             {
                 type: ProjectTypeEnum.CORPORATE,
@@ -72,6 +82,7 @@ export function useProjects() {
                 year: 2021,
                 image: 'https://stralom-portifolio.s3.us-east-2.amazonaws.com/public/projects/financial.webp',
                 skills: [SkillsEnums.TYPESCRIPT, SkillsEnums.REACT_NATIVE, SkillsEnums.REACT, SkillsEnums.NEXT, SkillsEnums.NODE, SkillsEnums.NEST, SkillsEnums.TYPEORM, SkillsEnums.POSTGRES, SkillsEnums.DOCKER, SkillsEnums.GIT],
+                url: 'https://financial.stralom.com/',
             },
             {
                 type: ProjectTypeEnum.PERSONAL,

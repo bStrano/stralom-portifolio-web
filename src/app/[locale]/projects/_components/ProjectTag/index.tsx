@@ -85,6 +85,10 @@ const skills: GenericLookupInterface<SkillsEnums, SkillLookupInterface> = {
         title: 'Amazon S3',
         color: 'blue'
     },
+    [SkillsEnums.BEDROCK]: {
+        title: 'Amazon Bedrock',
+        color: 'violet'
+    },
     [SkillsEnums.UNITY]: {
         title: 'Unity',
         color: 'gray'

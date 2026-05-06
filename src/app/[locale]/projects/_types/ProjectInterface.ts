@@ -7,5 +7,6 @@ export interface ProjectInterface {
     description: string,
     year: number,
     image: string,
-    skills: SkillsEnums[]
+    skills: SkillsEnums[],
+    url?: string,
 }

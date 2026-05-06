@@ -21,6 +21,7 @@ export enum SkillsEnums {
     AWS = 'aws',
     EC2 = 'ec2',
     S3 = 's3',
+    BEDROCK = 'bedrock',
     MONGODB = 'mongodb',
     FLUTTER = 'flutter',
     DART = 'dart',
