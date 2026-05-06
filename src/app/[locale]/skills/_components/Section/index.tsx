@@ -42,13 +42,13 @@ function SkillSection({title, skills}: ISkillSectionProps) {
             <h1 className={'text-white text-lg pb-3'}>
                 {title}
             </h1>
-            <div className={'grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-8 gap-10 justify-start'}>
+            <div className={'flex flex-wrap gap-3 sm:gap-4'}>
                 {skills.map((skill, index) => (
                     <div
                         key={index}
                         className="skill-card-fade"
                         data-visible={visible}
-                        style={{transitionDelay: `${index * 60}ms`}}
+                        style={{transitionDelay: `${index * 40}ms`}}
                     >
                         <SkillCard
                             {...skill}

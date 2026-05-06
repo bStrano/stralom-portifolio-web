@@ -46,6 +46,10 @@ export default function SkillsPage() {
                             icon: 'cib:next-js'
                         },
                         {
+                            title: 'React Native',
+                            icon: 'logos:react'
+                        },
+                        {
                             title: 'React Query',
                             icon: 'logos:react-query-icon'
                         },
@@ -76,16 +80,20 @@ export default function SkillsPage() {
                             icon: 'logos:nodejs'
                         },
                         {
+                            title: 'Nestjs',
+                            icon: 'logos:nestjs'
+                        },
+                        {
+                            title: 'GraphQL',
+                            icon: 'logos:graphql'
+                        },
+                        {
                             title: 'Typeorm',
                             icon: 'logos:typeorm'
                         },
                         {
                             title: 'Prisma',
                             icon: 'skill-icons:prisma'
-                        },
-                        {
-                            title: 'Nestjs',
-                            icon: 'logos:nestjs'
                         },
                         {
                             title: 'Firebase',
@@ -110,24 +118,68 @@ export default function SkillsPage() {
                             icon: 'skill-icons:aws-light'
                         },
                         {
+                            title: 'Amazon Bedrock',
+                            icon: 'logos:aws'
+                        },
+                        {
+                            title: 'PostgreSQL',
+                            icon: 'logos:postgresql'
+                        },
+                        {
                             title: 'Oracle Database',
                             icon: 'devicon:oracle'
                         },
                         {
-                            title: 'Mongodb',
+                            title: 'MongoDB',
                             icon: 'skill-icons:mongodb'
                         },
                         {
-                            title: 'Git',
-                            icon: 'skill-icons:git'
+                            title: 'Redis',
+                            icon: 'logos:redis'
+                        },
+                        {
+                            title: 'SQLite',
+                            icon: 'logos:sqlite'
+                        },
+                        {
+                            title: 'Vercel',
+                            icon: 'skill-icons:vercel-light'
+                        },
+                        {
+                            title: 'Cloudflare',
+                            icon: 'logos:cloudflare'
+                        },
+                        {
+                            title: 'Linux',
+                            icon: 'logos:linux-tux'
                         },
                         {
                             title: 'Docker',
                             icon: 'skill-icons:docker'
                         },
                         {
+                            title: 'GitHub Actions',
+                            icon: 'logos:github-actions'
+                        },
+                        {
+                            title: 'Git',
+                            icon: 'skill-icons:git'
+                        },
+                        {
                             title: 'Jest',
                             icon: 'skill-icons:jest'
+                        },
+                        {
+                            title: 'Testing Library',
+                            icon: 'logos:testing-library'
+                        },
+                        {
+                            title: 'Cypress',
+                            icon: 'skill-icons:cypress-light'
+                        },
+                        {
+                            title: 'Playwright',
+                            icon: 'logos:playwright'
                         },
                     ]}/>
                 </div>
