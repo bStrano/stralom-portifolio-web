@@ -104,6 +104,14 @@ export default function SkillsPage() {
                             icon: 'logos:swagger'
                         },
                         {
+                            title: 'JWT',
+                            icon: 'logos:jwt-icon'
+                        },
+                        {
+                            title: 'Handlebars',
+                            icon: 'logos:handlebars'
+                        },
+                        {
                             title: '.NET',
                             icon: 'skill-icons:dotnet'
                         },
@@ -122,8 +130,16 @@ export default function SkillsPage() {
                             icon: 'logos:aws'
                         },
                         {
+                            title: 'Azure',
+                            icon: 'logos:microsoft-azure'
+                        },
+                        {
                             title: 'PostgreSQL',
                             icon: 'logos:postgresql'
+                        },
+                        {
+                            title: 'SQL Server',
+                            icon: 'simple-icons:microsoftsqlserver'
                         },
                         {
                             title: 'Oracle Database',
@@ -168,6 +184,10 @@ export default function SkillsPage() {
                         {
                             title: 'Jest',
                             icon: 'skill-icons:jest'
+                        },
+                        {
+                            title: 'Supertest',
+                            icon: 'tabler:test-pipe'
                         },
                         {
                             title: 'Testing Library',

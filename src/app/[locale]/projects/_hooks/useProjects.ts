@@ -10,6 +10,14 @@ export function useProjects() {
     const projects: ProjectInterface[] = useMemo(() => {
         return [
             {
+                type: ProjectTypeEnum.CORPORATE,
+                title: t('engineeringFel.title'),
+                description: t('engineeringFel.description'),
+                year: 2026,
+                image: 'https://stralom-portifolio.s3.us-east-2.amazonaws.com/public/projects/fel.png',
+                skills: [SkillsEnums.TYPESCRIPT, SkillsEnums.REACT, SkillsEnums.NEXT, SkillsEnums.TAILWIND, SkillsEnums.NODE, SkillsEnums.NEST, SkillsEnums.TYPEORM, SkillsEnums.POSTGRES, SkillsEnums.MSSQL, SkillsEnums.JWT, SkillsEnums.SWAGGER, SkillsEnums.HANDLEBARS, SkillsEnums.JEST, SkillsEnums.SUPERTEST, SkillsEnums.PLAYWRIGHT, SkillsEnums.AZURE, SkillsEnums.DOCKER, SkillsEnums.GIT],
+            },
+            {
                 type: ProjectTypeEnum.PERSONAL,
                 title: t('cookbook.title'),
                 description: t('cookbook.description'),

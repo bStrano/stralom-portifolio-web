@@ -62,7 +62,7 @@ const skills: GenericLookupInterface<SkillsEnums, SkillLookupInterface> = {
         color: 'yellow'
     },
     [SkillsEnums.JEST]: {
-        title: 'Docker',
+        title: 'Jest',
         color: 'rose'
     },
     [SkillsEnums.MONGODB]: {
@@ -88,6 +88,34 @@ const skills: GenericLookupInterface<SkillsEnums, SkillLookupInterface> = {
     [SkillsEnums.BEDROCK]: {
         title: 'Amazon Bedrock',
         color: 'violet'
+    },
+    [SkillsEnums.AZURE]: {
+        title: 'Azure',
+        color: 'blue'
+    },
+    [SkillsEnums.MSSQL]: {
+        title: 'SQL Server',
+        color: 'red'
+    },
+    [SkillsEnums.JWT]: {
+        title: 'JWT',
+        color: 'rose'
+    },
+    [SkillsEnums.SWAGGER]: {
+        title: 'Swagger',
+        color: 'green'
+    },
+    [SkillsEnums.HANDLEBARS]: {
+        title: 'Handlebars',
+        color: 'amber'
+    },
+    [SkillsEnums.SUPERTEST]: {
+        title: 'Supertest',
+        color: 'emerald'
+    },
+    [SkillsEnums.PLAYWRIGHT]: {
+        title: 'Playwright',
+        color: 'teal'
     },
     [SkillsEnums.UNITY]: {
         title: 'Unity',

@@ -117,6 +117,10 @@
     },
     "visitSite": "Visit site",
     "data": {
+      "engineeringFel": {
+        "title": "Engineering Project Management",
+        "description": "Platform under development for engineering project management based on the FEL methodology. Controls the full project flow with document management (GED), capacity planning for hour tracking, and schedule monitoring."
+      },
       "cookbook": {
         "title": "Cookbook",
         "description": "Personal cookbook app to keep, browse and refine recipes through a conversational AI assistant. Generate new dishes from a prompt, tweak existing ones, and search by category, prep time or difficulty."
