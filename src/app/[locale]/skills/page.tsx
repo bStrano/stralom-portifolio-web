@@ -28,6 +28,10 @@ export default function SkillsPage() {
                             icon: 'skill-icons:java-dark'
                         },
                         {
+                            title: 'Python',
+                            icon: 'logos:python'
+                        },
+                        {
                             title: 'C#',
                             icon: 'logos:c-sharp'
                         },
@@ -112,6 +116,10 @@ export default function SkillsPage() {
                             icon: 'logos:handlebars'
                         },
                         {
+                            title: 'LangChain',
+                            icon: 'simple-icons:langchain'
+                        },
+                        {
                             title: '.NET',
                             icon: 'skill-icons:dotnet'
                         },
@@ -128,6 +136,10 @@ export default function SkillsPage() {
                         {
                             title: 'Amazon Bedrock',
                             icon: 'logos:aws'
+                        },
+                        {
+                            title: 'Amazon SES',
+                            icon: 'lucide:mail'
                         },
                         {
                             title: 'Azure',

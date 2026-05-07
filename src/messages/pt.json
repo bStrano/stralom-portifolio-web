@@ -121,6 +121,10 @@
         "title": "Gestão de Projetos de Engenharia",
         "description": "Plataforma em desenvolvimento para gestão de projetos de engenharia baseada na metodologia FEL. Controla o fluxo completo do projeto, com GED para gerenciamento de arquivos, mapa de carga para controle de horas e acompanhamento de cronograma."
       },
+      "accountingAudits": {
+        "title": "Conferências Contábeis e Fiscais",
+        "description": "Plataforma de auditoria contábil e fiscal com automações de conferência. Faz conciliação de razão contábil, conferência de notas fiscais e pagamentos, cruzamento entre módulos fiscal e financeiro e detecção de inconsistências em balanços e balancetes."
+      },
       "cookbook": {
         "title": "Livro de Receitas",
         "description": "App de livro de receitas para guardar, explorar e refinar pratos através de um assistente conversacional de IA. Gera novas receitas a partir de um prompt, ajusta as existentes e busca por categoria, tempo de preparo ou dificuldade."

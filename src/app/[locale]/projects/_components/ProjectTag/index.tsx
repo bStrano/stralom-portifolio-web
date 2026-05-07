@@ -117,6 +117,18 @@ const skills: GenericLookupInterface<SkillsEnums, SkillLookupInterface> = {
         title: 'Playwright',
         color: 'teal'
     },
+    [SkillsEnums.PYTHON]: {
+        title: 'Python',
+        color: 'yellow'
+    },
+    [SkillsEnums.LANGCHAIN]: {
+        title: 'LangChain',
+        color: 'emerald'
+    },
+    [SkillsEnums.SES]: {
+        title: 'Amazon SES',
+        color: 'orange'
+    },
     [SkillsEnums.UNITY]: {
         title: 'Unity',
         color: 'gray'

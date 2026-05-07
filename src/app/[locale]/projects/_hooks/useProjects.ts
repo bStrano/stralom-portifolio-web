@@ -28,6 +28,14 @@ export function useProjects() {
             },
             {
                 type: ProjectTypeEnum.CORPORATE,
+                title: t('accountingAudits.title'),
+                description: t('accountingAudits.description'),
+                year: 2025,
+                image: 'https://stralom-portifolio.s3.us-east-2.amazonaws.com/public/projects/contabilidade.png',
+                skills: [SkillsEnums.TYPESCRIPT, SkillsEnums.REACT, SkillsEnums.NEXT, SkillsEnums.TAILWIND, SkillsEnums.NODE, SkillsEnums.NEST, SkillsEnums.TYPEORM, SkillsEnums.POSTGRES, SkillsEnums.PYTHON, SkillsEnums.LANGCHAIN, SkillsEnums.SES, SkillsEnums.DOCKER, SkillsEnums.GIT],
+            },
+            {
+                type: ProjectTypeEnum.CORPORATE,
                 title: t('privatePension.title'),
                 description: t('privatePension.description'),
                 year: 2023,
